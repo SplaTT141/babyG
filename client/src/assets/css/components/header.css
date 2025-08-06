@@ -1,0 +1,24 @@
+.main-nav {
+  display: flex;
+  align-items: center;
+  border: 1px solid red;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 100px;
+}
+
+.main-menu ul {
+  display: flex;
+  gap: 1rem;
+}
+
+.user-actions ul {
+  display: flex;
+  gap: 1rem;
+}
+
+.user-action ul:nth-child(2) {
+  background-color: red;
+}
