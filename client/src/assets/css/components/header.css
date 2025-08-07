@@ -19,6 +19,6 @@
   gap: 1rem;
 }
 
-.user-action ul:nth-child(2) {
-  background-color: red;
+.user-actions ul:hover {
+  cursor: pointer;
 }
