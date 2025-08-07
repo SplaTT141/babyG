@@ -1,22 +1,18 @@
 export const headerData = [
     {
-        text: 'Pradžia',
+        text: 'Pagrindinis',
         href: '/',
     },
     {
-        text: 'Berniukams',
-        href: '/berniukams',
+        text: 'Produktai',
+        href: '/produktai',
     },
     {
-        text: 'Mergaitėms',
-        href: '/mergaitems',
+        text: 'Apie mus',
+        href: '/apie-mus',
     },
     {
-        text: 'Kūdikiams',
-        href: '/kudikiams',
-    },
-    {
-        text: 'Išpardavimas',
-        href: '/ispardavimas',
+        text: 'Kontaktai',
+        href: '/kontaktai',
     },
 ]

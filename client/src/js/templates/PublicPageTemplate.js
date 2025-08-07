@@ -12,23 +12,25 @@ export class PublicPageTemplate {
 
         return `
         <header>
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
-                    <nav class="main-nav">
-                        <img class="logo" src="./src/assets/img/logo.png" alt="BabyG logo" />
-                        <div class="main-menu">
-                            <ul>
-                                ${navbarHTML}
-                            </ul>
-                        </div>
-                        <div class="user-actions">
-                            <ul>
-                            <li><a><img src="./src/assets/img/bag.svg" alt="cart" /></a></li>
-                            <li><a><img src="./src/assets/img/heart.svg" alt="heart" /></a></li>
-                            <li><a><img src="./src/assets/img/user.svg" alt="user" /></a></li>
-                            </ul>
-                        </div>
-                    </nav>
+                    <div class="header-wrapper col-12">
+                        <nav class="main-nav col-10 m-1">
+                            <img class="logo" src="./src/assets/img/logo.png" alt="BabyG logo" />
+                            <div class="main-menu">
+                                <ul>
+                                    ${navbarHTML}
+                                </ul>
+                            </div>
+                            <div class="user-actions">
+                                <ul>
+                                <li><a><img src="./src/assets/img/bag.svg" alt="cart" /></a></li>
+                                <li><a><img src="./src/assets/img/heart.svg" alt="heart" /></a></li>
+                                <li><a><img src="./src/assets/img/user.svg" alt="user" /></a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
                 </div>
             </div>
         </header>
@@ -38,7 +40,15 @@ export class PublicPageTemplate {
     main() {
         return `
         <main>
-            <h1>Main</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <section class="intro">
+                            <h1>Main content</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
         `
     }

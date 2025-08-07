@@ -5,3 +5,4 @@
 @import "./vendors/font-awesome.min.css";
 /* components */
 @import "./components/header.css";
+@import "./components/intro.css";

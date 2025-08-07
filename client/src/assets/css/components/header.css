@@ -1,8 +1,12 @@
 .main-nav {
   display: flex;
   align-items: center;
-  border: 1px solid red;
   justify-content: space-between;
+}
+
+.header-wrapper {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  border-radius: 5px;
 }
 
 .logo {
@@ -11,7 +15,14 @@
 
 .main-menu ul {
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
+}
+
+.main-menu a {
+  font-size: 1.1rem;
+  letter-spacing: 1.5px;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
 }
 
 .user-actions ul {
