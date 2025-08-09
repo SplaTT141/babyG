@@ -1,11 +1,11 @@
-export const headerData = [
+export const centerData = [
     {
         text: 'Pagrindinis',
         href: '/',
     },
     {
-        text: 'Produktai',
-        href: '/produktai',
+        text: 'Kolekcija',
+        href: '/kolekcija',
     },
     {
         text: 'Apie mus',
@@ -14,5 +14,20 @@ export const headerData = [
     {
         text: 'Kontaktai',
         href: '/kontaktai',
+    },
+]
+
+export const rightData = [
+    {
+        imgSrc: './src/assets/img/bag.svg" alt="Krepšelis',
+        href: '/krepselis'
+    },
+    {
+        imgSrc: './src/assets/img/heart.svg" alt="Mėgstamiausi',
+        href: '/megstamiausi'
+    },
+    {
+        imgSrc: './src/assets/img/user.svg" alt="Vartotojas',
+        href: '/vartotojas'
     },
 ]
