@@ -6,7 +6,13 @@ body * {
 }
 
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
+  font-family: Calibri, sans-serif, "Segoe UI", "Gill Sans";
+}
+
+:root {
+  --txtpurple: #a679d2;
+  --txtgrey: #6e6982;
 }
 
 ul {

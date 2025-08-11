@@ -2,9 +2,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(35, 27, 35, 0.15) 0px 0px 0px 1px;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 4px, rgba(0, 0, 0, 0.24) 0px 1px 1px;
   border-radius: 5px;
 }
@@ -23,7 +20,7 @@
   font-size: 1.1rem;
   letter-spacing: 1.5px;
   color: rgb(0, 0, 0);
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .user-actions ul {
