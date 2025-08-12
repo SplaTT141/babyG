@@ -40,6 +40,11 @@
   font-weight: bold;
   background: linear-gradient(to right, #c391d8, #fa9fa2);
   border: none;
+  transition: 0.2s;
+}
+
+.text-content button:hover {
+  transform: scale(1.05);
 }
 
 .numbers-section {
