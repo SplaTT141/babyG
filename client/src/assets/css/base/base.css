@@ -1,8 +1,8 @@
 :root {
-  --txtpurple: #a679d2;
-  --txtgrey: #6e6982;
-  --txtorange: #f1a48c;
-  --txtyellow: #fbd664;
+  --purple: #a679d2;
+  --grey: #6e6982;
+  --orange: #f1a48c;
+  --yellow: #fbd664;
 }
 
 body,

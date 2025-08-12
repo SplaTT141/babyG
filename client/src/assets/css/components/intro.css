@@ -21,13 +21,13 @@
 }
 
 .text-section .second-line {
-  color: var(--txtpurple);
+  color: var(--purple);
 }
 
 .text-section p {
   margin-top: 1.5rem;
   font-size: 1.5rem;
-  color: var(--txtgrey);
+  color: var(--grey);
 }
 
 .text-section button {
@@ -49,22 +49,22 @@
 }
 
 .numbers-section p {
-  color: var(--txtgrey);
+  color: var(--grey);
 }
 
 .numbers-section .section1 h1 {
-  color: var(--txtpurple);
+  color: var(--purple);
 }
 
 .numbers-section .section2 h1 {
-  color: var(--txtorange);
+  color: var(--orange);
 }
 
 .numbers-section .rating {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  color: var(--txtyellow);
+  color: var(--yellow);
 }
 
 .numbers-section .rating i {

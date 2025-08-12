@@ -88,19 +88,19 @@ export class PublicPageTemplate {
                                 <img src="./src/assets/img/baby.png" alt="baby"/>
                                 <h3>Kūdikis</h3>
                                 <p>0-12 mėnesių</p>
-                                <a>Drabužiai kūdikiams</a>
+                                <a href="#">Drabužiai kūdikiams</a>
                             </div>
                             <div class="toddler col-4">
                                 <img src="./src/assets/img/toddler.png" alt="toddler"/>
                                 <h3>Mažylis</h3>
                                 <p>1-3 metų</p>
-                                <a>Drabužiai mažyliams</a>
+                                <a href="#">Drabužiai mažyliams</a>
                             </div>
                             <div class="kid col-4">
                                 <img src="./src/assets/img/kid.png" alt="kid"/>
                                 <h3>Vaikas</h3>
                                 <p>4-7 metų</p>
-                                <a>Drabužiai vaikams</a>
+                                <a href="#">Drabužiai vaikams</a>
                             </div>
                         </div>
                     </div>

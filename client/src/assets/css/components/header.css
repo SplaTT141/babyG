@@ -13,12 +13,11 @@
 
 .main-menu ul {
   display: flex;
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
 .main-menu a {
   font-size: 1.1rem;
-  letter-spacing: 1.5px;
   color: rgb(0, 0, 0);
   font-weight: 600;
 }
@@ -34,4 +33,31 @@
 
 .container-fluid .row {
   margin-bottom: 0;
+}
+
+.user-actions li {
+  transition: all 0.2s;
+}
+
+.user-actions li:hover {
+  transform: scale(1.3);
+}
+
+.main-menu li {
+  position: relative;
+}
+
+.main-menu li::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #000;
+  transition: all 0.5s;
+}
+
+.main-menu li:hover::after {
+  width: 100%;
 }
