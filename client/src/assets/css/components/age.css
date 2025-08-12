@@ -1,3 +1,79 @@
 .age-header {
   text-align: center;
 }
+
+.age-header h2 {
+  font-size: 2.2rem;
+}
+
+.age-header p {
+  font-size: 1.2rem;
+  margin-top: 0.8rem;
+  color: var(--txtgrey);
+}
+
+.age-groups {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.age-groups img {
+  border-radius: 40px;
+  width: 70px;
+  margin-bottom: 2rem;
+}
+
+.age-groups p {
+  font-size: 1.1rem;
+  color: var(--txtgrey);
+}
+
+.age-groups h3 {
+  font-size: 1.4rem;
+}
+
+.age-groups a {
+  margin-top: 2rem;
+  width: 100%;
+  font-weight: bold;
+  padding: 0.7rem;
+  border: 0.1px #cfcece57 solid;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.age-groups .baby,
+.age-groups .toddler,
+.age-groups .kid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px #cfcece57 solid;
+  padding: 2rem;
+  border-radius: 30px;
+  transition: all 0.2s;
+}
+
+.age-groups .baby h3 {
+  color: var(--txtpurple);
+}
+
+.age-groups .toddler h3 {
+  color: var(--txtorange);
+}
+
+.age-groups .kid h3 {
+  color: var(--txtyellow);
+}
+
+.age-groups .baby:hover,
+.age-groups .toddler:hover,
+.age-groups .kid:hover {
+  box-shadow: rgba(0, 0, 0, 0.051) 0px 2px 8px;
+  transform: scale(1.02);
+}
+
+.age-groups a:hover {
+  background-color: rgb(255, 217, 0);
+}

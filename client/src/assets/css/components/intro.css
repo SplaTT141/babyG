@@ -1,5 +1,5 @@
 .intro {
-  min-height: calc(100vh - 100px);
+  min-height: calc(100vh - 115px);
   background: linear-gradient(to right, #ddc3e7, #ecc8c9);
   display: flex;
   align-items: center;
@@ -14,7 +14,6 @@
 .text-content {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
 }
 
 .text-section {
@@ -46,6 +45,7 @@
 .numbers-section {
   display: flex;
   gap: 1rem;
+  margin-top: 4rem;
 }
 
 .numbers-section p {
@@ -57,14 +57,14 @@
 }
 
 .numbers-section .section2 h1 {
-  color: #f1a48c;
+  color: var(--txtorange);
 }
 
 .numbers-section .rating {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  color: rgb(255, 217, 0);
+  color: var(--txtyellow);
 }
 
 .numbers-section .rating i {
