@@ -106,6 +106,13 @@ export class PublicPageTemplate {
                     </div>
                 </div>
             </section>
+            <section class="products">
+                <div class="container">
+                    <div class="row">
+                    
+                    </div>
+                </div>
+            <section>
         </main>
         `
     }
