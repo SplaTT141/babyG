@@ -15,6 +15,7 @@ body * {
 body {
   /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
   font-family: Calibri, sans-serif, "Segoe UI", "Gill Sans";
+  background: linear-gradient(to right, #ddc3e7, #ecc8c9);
 }
 
 ul {

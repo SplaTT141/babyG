@@ -1,0 +1,48 @@
+footer {
+  background-color: #24212c;
+  color: #fff;
+}
+
+.footer-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-section img {
+  width: 50px;
+}
+
+.logo-section p,
+.shop-section li,
+.shop-section a,
+.contacts li {
+  color: rgb(205, 205, 205);
+}
+
+.logo-section p,
+.shop-section ul,
+.contacts ul {
+  margin-top: 1rem;
+}
+
+.logo-section h4,
+.shop-section h4,
+.contacts h4 {
+  font-size: 1.2rem;
+}
+
+.shop-section ul,
+.contacts ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.shop-section li {
+  transition: all 0.2s;
+}
+
+.shop-section li:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}

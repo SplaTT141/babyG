@@ -72,7 +72,7 @@ export class PublicPageTemplate {
                                 </div>
                             </div class="col-6">
                             <img src="./src/assets/img/kids3.png" alt="Kids" class="col-6 m-1"/>
-                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -106,13 +106,66 @@ export class PublicPageTemplate {
                     </div>
                 </div>
             </section>
-            <section class="products">
+            <section class="popular-products">
                 <div class="container">
                     <div class="row">
-                    
+                        <div class="products-header">
+                            <h2>Populiariausios prekės</h2>
+                            <p>Atraskite mūsų populiariausias prekes, kurios derina komfortą ir stilių</p>
+                        </div>
+                        <div class="product-cards">
+                            <div class="product-card col-4">
+                                <h3>Džemperis</h3>
+                                <img src="./src/assets/img/product.png" alt="product"/>
+                                <p class="product-label">Mergaitei</p>
+                                <p class="age">4-7 metų</p>
+                                <p class="price">13,99€</p>
+                                <button type="button" href="#">Pridėti į krepšelį</button>
+                            </div>
+                            <div class="product-card col-4">
+                                <h3>Džemperis</h3>
+                                <img src="./src/assets/img/product.png" alt="product"/>
+                                <p class="product-label">Mergaitei</p>
+                                <p class="age">4-7 metų</p>
+                                <p class="price">13,99€</p>
+                                <button type="button" href="#">Pridėti į krepšelį</button>
+                            </div>
+                            <div class="product-card col-4">
+                                <h3>Džemperis</h3>
+                                <img src="./src/assets/img/product.png" alt="product"/>
+                                <p class="product-label">Mergaitei</p>
+                                <p class="age">4-7 metų</p>
+                                <p class="price">13,99€</p>
+                                <button type="button" href="#">Pridėti į krepšelį</button>
+                            </div>
+                            <div class="product-card col-4">
+                                <h3>Džemperis</h3>
+                                <img src="./src/assets/img/product.png" alt="product"/>
+                                <p class="product-label">Mergaitei</p>
+                                <p class="age">4-7 metų</p>
+                                <p class="price">13,99€</p>
+                                <button type="button" href="#">Pridėti į krepšelį</button>
+                            </div>
+                            <div class="product-card col-4">
+                                <h3>Džemperis</h3>
+                                <img src="./src/assets/img/product.png" alt="product"/>
+                                <p class="product-label">Mergaitei</p>
+                                <p class="age">4-7 metų</p>
+                                <p class="price">13,99€</p>
+                                <button type="button" href="#">Pridėti į krepšelį</button>
+                            </div>
+                            <div class="product-card col-4">
+                                <h3>Džemperis</h3>
+                                <img src="./src/assets/img/product.png" alt="product"/>
+                                <p class="product-label">Mergaitei</p>
+                                <p class="age">4-7 metų</p>
+                                <p class="price">13,99€</p>
+                                <button type="button" href="#">Pridėti į krepšelį</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            <section>
+            </section>
         </main>
         `
     }
@@ -120,7 +173,32 @@ export class PublicPageTemplate {
     footer() {
         return `
         <footer>
-            <h1>Footer</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="footer-section">
+                        <div class="logo-section col-3 m-1">
+                            <img src="./src/assets/img/logo-g.png" alt="logo" />
+                            <p>Kuriame magiškas akimirkas su gražiais, patogiais drabužiais jūsų mažyliams.</p>
+                        </div>
+                        <div class="shop-section col-3 m-1">
+                            <h4>Prekės</h4>
+                            <ul>
+                                <li><a href="#">Kūdikiams</a></li>
+                                <li><a href="#">Mažyliams</a></li>
+                                <li><a href="#">Vaikams</a></li>
+                                <li><a href="#">Išpardavimas</a></li>
+                            </ul>
+                        </div>
+                        <div class="contacts col-3">
+                            <h4>Kontaktai</h4>
+                            <ul>
+                                <li>(+370) 67190356</li>
+                                <li>info@babyg.lt</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </footer>
         `
     }

@@ -3,12 +3,13 @@
   align-items: center;
   justify-content: space-between;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 4px, rgba(0, 0, 0, 0.24) 0px 1px 1px;
-  border-radius: 5px;
+  border-radius: 7px;
+  background-color: #fff;
+  padding: 0 1rem;
 }
 
 .logo {
   width: 100px;
-  border-radius: 5px;
 }
 
 .main-menu ul {
