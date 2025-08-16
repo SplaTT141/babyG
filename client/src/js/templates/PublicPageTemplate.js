@@ -133,7 +133,7 @@ export class PublicPageTemplate {
                             <div class="product-card col-4">
                                 <h3>Džemperis</h3>
                                 <img src="./src/assets/img/product.png" alt="product"/>
-                                <p class="product-label">Mergaitei</p>nnpm run dev
+                                <p class="product-label">Mergaitei</p>
                                 <p class="age">4-7 metų</p>
                                 <p class="price">13,99€</p>
                                 <button type="button" href="#">Pridėti į krepšelį</button>
@@ -176,7 +176,7 @@ export class PublicPageTemplate {
                             </div>
                             <div class="email">
                                 <div class="email-input">
-                                    <input type="email"></input>
+                                    <input type="email" placeholder="Įveskite savo elektroninį paštą"></input>
                                     <button class="btn-linear type="submit">Prenumeruoti</button>
                                 </div>
                                 <p>Jokio šlamšto, galite bet kada atsisakyti prenumeratos. Mes gerbiame jūsų privatumą.</p>
@@ -211,8 +211,8 @@ export class PublicPageTemplate {
                         <div class="contacts col-3">
                             <h4>Kontaktai</h4>
                             <ul>
-                                <li>(+370) 67190356</li>
-                                <li>info@babyg.lt</li>
+                                <li><img src="./src/assets/img/phone.svg" alt="phone"/>(+370) 67190356</li>
+                                <li><img src="./src/assets/img/mail.svg" alt="mail"/>info@babyg.lt</li>
                             </ul>
                         </div>
                     </div>

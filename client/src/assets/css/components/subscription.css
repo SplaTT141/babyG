@@ -5,7 +5,7 @@
   text-align: center;
   border: 1px #cfcece57 solid;
   border-radius: 30px;
-  margin-top: 3rem;
+  margin-bottom: 3rem;
   transition: all 0.2s;
 }
 
@@ -14,8 +14,24 @@
   border: 1px #0000003f solid;
   border-radius: 30px;
   margin-top: 3rem;
-  transition: all 0.2s;
   padding: 2rem;
+}
+
+.email input {
+  text-align: left;
+  width: 500px;
+  padding: 0.7rem 1rem;
+  border-radius: 10px;
+  border: none;
+  color: var(--grey);
+  font-size: 1rem;
+  margin-right: 1rem;
+  transition: all 0.2s;
+}
+
+.email input:hover {
+  cursor: pointer;
+  transform: scale(1.05);
 }
 
 .email p {

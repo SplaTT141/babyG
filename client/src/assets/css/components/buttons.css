@@ -11,6 +11,6 @@
   transition: 0.2s;
 }
 
-.btn-linear button:hover {
+.btn-linear:hover {
   transform: scale(1.05);
 }

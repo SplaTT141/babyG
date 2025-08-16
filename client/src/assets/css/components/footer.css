@@ -46,3 +46,12 @@ footer {
   cursor: pointer;
   transform: scale(1.1);
 }
+
+.contacts li {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.contacts img {
+  width: 20px;
+}
