@@ -1,0 +1,24 @@
+.subscription {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 1px #cfcece57 solid;
+  border-radius: 30px;
+  margin-top: 3rem;
+  transition: all 0.2s;
+}
+
+.email {
+  background-color: #f7f1f6;
+  border: 1px #0000003f solid;
+  border-radius: 30px;
+  margin-top: 3rem;
+  transition: all 0.2s;
+  padding: 2rem;
+}
+
+.email p {
+  margin-top: 1rem;
+  color: var(--grey);
+}

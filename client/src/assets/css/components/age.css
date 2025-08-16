@@ -6,16 +6,6 @@
   text-align: center;
 }
 
-.age-header h2 {
-  font-size: 2.2rem;
-}
-
-.age-header p {
-  font-size: 1.2rem;
-  margin-top: 0.8rem;
-  color: var(--grey);
-}
-
 .age-groups {
   margin-top: 3rem;
   text-align: center;

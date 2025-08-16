@@ -51,7 +51,7 @@ export class PublicPageTemplate {
                                     <h1 class="first-line">Žavūs drabužiai patiems</h1>
                                     <h1 class="second-line">mažiausiems</h1>
                                     <p>Atraskite mūsų patogių, stilingų ir prieinamų drabužių kolekciją, skirtą kūdikiams ir vaikams.</p>
-                                    <button type="button">Apsipirkti</button>
+                                    <button class="btn-linear" type="button">Apsipirkti</button>
                                 </div>
                                 <div class="numbers-section">
                                     <div class="section1">
@@ -80,8 +80,8 @@ export class PublicPageTemplate {
                 <div class="container">
                     <div class="row">
                         <div class="age-header">
-                            <h2>Pirkite pagal amžių</h2>
-                            <p>Išsirinkite tobulus drabužius kiekvienam jūsų vaiko augimo etapui.</p>
+                            <h2 class="heading">Pirkite pagal amžių</h2>
+                            <p class="heading-paragraph">Išsirinkite tobulus drabužius kiekvienam jūsų vaiko augimo etapui.</p>
                         </div>
                         <div class="age-groups">
                             <div class="baby col-4">
@@ -110,8 +110,8 @@ export class PublicPageTemplate {
                 <div class="container">
                     <div class="row">
                         <div class="products-header">
-                            <h2>Populiariausios prekės</h2>
-                            <p>Atraskite mūsų populiariausias prekes, kurios derina komfortą ir stilių</p>
+                            <h2 class="heading">Populiariausios prekės</h2>
+                            <p class="heading-paragraph">Atraskite mūsų populiariausias prekes, kurios derina komfortą ir stilių</p>
                         </div>
                         <div class="product-cards">
                             <div class="product-card col-4">
@@ -133,7 +133,7 @@ export class PublicPageTemplate {
                             <div class="product-card col-4">
                                 <h3>Džemperis</h3>
                                 <img src="./src/assets/img/product.png" alt="product"/>
-                                <p class="product-label">Mergaitei</p>
+                                <p class="product-label">Mergaitei</p>nnpm run dev
                                 <p class="age">4-7 metų</p>
                                 <p class="price">13,99€</p>
                                 <button type="button" href="#">Pridėti į krepšelį</button>
@@ -161,6 +161,25 @@ export class PublicPageTemplate {
                                 <p class="age">4-7 metų</p>
                                 <p class="price">13,99€</p>
                                 <button type="button" href="#">Pridėti į krepšelį</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="subscription">
+                            <div class="subscription-header">
+                                <h2 class="heading">Likite informuoti!</h2>
+                                <p class="heading-paragraph">Gaukite išskirtinius pasiūlymus ir naujų prekių pranešimus tiesiai į savo el. paštą</p>
+                            </div>
+                            <div class="email">
+                                <div class="email-input">
+                                    <input type="email"></input>
+                                    <button class="btn-linear type="submit">Prenumeruoti</button>
+                                </div>
+                                <p>Jokio šlamšto, galite bet kada atsisakyti prenumeratos. Mes gerbiame jūsų privatumą.</p>
                             </div>
                         </div>
                     </div>

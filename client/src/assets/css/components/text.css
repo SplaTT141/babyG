@@ -1,0 +1,10 @@
+.heading {
+  margin-top: 2rem;
+  font-size: 2.2rem;
+}
+
+.heading-paragraph {
+  font-size: 1.2rem;
+  margin-top: 0.8rem;
+  color: var(--grey);
+}
