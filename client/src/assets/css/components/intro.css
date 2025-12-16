@@ -1,13 +1,15 @@
 .intro {
-  /* min-height: calc(100vh - 115px); */
-  /* background: linear-gradient(to right, #ddc3e7, #ecc8c9); */
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
   margin: 5.5rem 0;
 }
 
-.intro img {
+.intro-content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.img-wrapper img {
+  width: 100%;
   max-width: 640px;
   border-radius: 5%;
 }
@@ -15,10 +17,12 @@
 .text-content {
   display: flex;
   flex-direction: column;
+  gap: 1.5rem;
 }
 
-.text-section {
-  font-size: 2rem;
+.text-section h1 {
+  font-size: clamp(24px, 2.5vw, 42px);
+  line-height: 1.2;
 }
 
 .text-section .second-line {
@@ -26,36 +30,66 @@
 }
 
 .text-section p {
-  margin-top: 1.5rem;
-  font-size: 1.5rem;
+  margin-top: 1rem;
+  font-size: clamp(14px, 1.2vw, 20px);
   color: var(--grey);
 }
 
 .numbers-section {
   display: flex;
-  gap: 1rem;
-  margin-top: 4rem;
+  gap: 2.5rem;
+  margin-top: 3rem;
+}
+
+.numbers-section h1 {
+  font-size: clamp(22px, 2.2vw, 36px);
 }
 
 .numbers-section p {
   color: var(--grey);
+  font-size: clamp(12px, 1vw, 18px);
 }
 
-.numbers-section .section1 h1 {
+.numbers-section .section1 {
   color: var(--purple);
 }
 
-.numbers-section .section2 h1 {
+.numbers-section .section2 {
   color: var(--orange);
 }
 
-.numbers-section .rating {
+.rating {
   display: flex;
   align-items: center;
   gap: 0.5rem;
   color: var(--yellow);
 }
 
-.numbers-section .rating i {
-  margin-top: 5px;
+.rating h1 {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .intro {
+    margin: 3rem 0;
+  }
+
+  .numbers-section {
+    gap: 1.5rem;
+    margin-top: 2rem;
+    justify-content: space-between;
+  }
+
+  .text-content {
+    text-align: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .numbers-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
 }
