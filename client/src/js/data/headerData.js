@@ -26,8 +26,4 @@ export const rightData = [
         imgSrc: './src/assets/img/heart.svg" alt="Mėgstamiausi',
         href: '/megstamiausi'
     },
-    {
-        imgSrc: './src/assets/img/user.svg" alt="Vartotojas',
-        href: '/vartotojas'
-    },
 ]
