@@ -2,10 +2,6 @@
   background-color: #fff;
 }
 
-.age-header {
-  text-align: center;
-}
-
 .age-groups {
   margin-top: 3rem;
   text-align: center;
@@ -38,9 +34,7 @@
   transition: all 0.5s;
 }
 
-.age-groups .baby,
-.age-groups .toddler,
-.age-groups .kid {
+.age-groups .age {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -71,4 +65,10 @@
 
 .age-groups a:hover {
   background-color: rgb(255, 217, 0);
+}
+
+@media (max-width: 768px) {
+  .age-groups .age {
+    margin-bottom: 1rem;
+  }
 }

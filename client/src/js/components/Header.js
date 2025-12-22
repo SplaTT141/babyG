@@ -10,6 +10,8 @@ export function Header() {
         `<li><a href="${data.href}" data-link><img src="${data.imgSrc}" alt="${data.alt || 'icon'}" /></a></li>`
     ).join('');
 
+    setTimeout(mobileMenu, 0);
+
     return `
         <header>
             <div class="container">
@@ -46,4 +48,11 @@ export function Header() {
             </div>
         </header>
         `;
+
+    function mobileMenu() {
+        const mobileMenu = document.querySelector('.mobile-menu');
+        mobileMenu.addEventListener('click', () => {
+            document.querySelector('.dropdown-menu').classList.toggle('active');
+        })
+    }
 }

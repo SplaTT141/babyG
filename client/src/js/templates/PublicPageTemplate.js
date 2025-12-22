@@ -16,6 +16,9 @@ export class PublicPageTemplate {
     }
 
     render() {
-        return `${this.header()}${this.main()}${this.footer()}`;
+        return `
+            ${this.header()}
+            ${this.main()}
+            ${this.footer()}`;
     }
 }
