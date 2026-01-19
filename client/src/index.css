@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
 body {
+  background: linear-gradient(to right, #ddc3e7, #ecc8c9);
   font-family: Calibri, sans-serif, "Segoe UI", "Gill Sans";
 }
 
@@ -9,4 +10,10 @@ body {
   --color-grey: #6e6982;
   --color-orange: #f1a48c;
   --color-yellow: #fbd664;
+}
+
+@layer utilities {
+  .hover-scale {
+    @apply transition-all duration-200 hover:scale-125;
+  }
 }
