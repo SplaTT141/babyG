@@ -1,1 +1,12 @@
 @import "tailwindcss";
+
+body {
+  font-family: Calibri, sans-serif, "Segoe UI", "Gill Sans";
+}
+
+@theme {
+  --color-purple: #a679d2;
+  --color-grey: #6e6982;
+  --color-orange: #f1a48c;
+  --color-yellow: #fbd664;
+}
