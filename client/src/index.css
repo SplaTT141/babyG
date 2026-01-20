@@ -13,7 +13,29 @@ body {
 }
 
 @layer utilities {
-  .hover-scale {
+  .hover-scale-sm {
     @apply transition-all duration-200 hover:scale-125;
+  }
+
+  .hover-scale-xl {
+    @apply transition-all duration-200 hover:scale-105;
+  }
+}
+
+@layer base {
+  .heading {
+    @apply text-[clamp(24px,4vw,42px)] leading-[1.2] text-center font-bold;
+  }
+
+  .paragraph {
+    @apply mt-4 text-[clamp(16px,2.5vw,20px)] text-gray text-center;
+  }
+}
+
+@layer components {
+  .btn-gradient {
+    @apply text-base mt-6 px-8 py-3 cursor-pointer rounded-lg text-white font-bold border-0 transition-all scale-105;
+    background: linear-gradient(to right, #c391d8, #fa9fa2);
+    font-family: Arial, Helvetica, sans-serif;
   }
 }

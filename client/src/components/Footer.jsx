@@ -12,6 +12,7 @@ export function Footer() {
                         <img className="w-15" src={logo} alt="logo" />
                         <p className="text-[#CDCDCD] text-base">Kuriame magiškas akimirkas su gražiais ir patogiais drabužiais Jūsų mažyliams.</p>
                     </div>
+
                     <div className="flex justify-around mt-2 px-4 sm:w-2/3">
                         <div>
                             <h4 className="text-xl mb-3">Prekės</h4>
@@ -22,6 +23,7 @@ export function Footer() {
                                 <li className="hover-scale"><Link to="#">Išpardavimas</Link></li>
                             </ul>
                         </div>
+                        
                         <div>
                             <h4 className="text-xl mb-3">Kontaktai</h4>
                             <ul>
