@@ -14,17 +14,21 @@ body {
 
 @layer utilities {
   .hover-scale-sm {
-    @apply transition-all duration-200 hover:scale-125;
+    @apply transition-all duration-200 hover:scale-105;
+  }
+
+  .hover-scale-md {
+    @apply transition-all duration-200 hover:scale-115;
   }
 
   .hover-scale-xl {
-    @apply transition-all duration-200 hover:scale-105;
+    @apply transition-all duration-200 hover:scale-125;
   }
 }
 
 @layer base {
   .heading {
-    @apply text-[clamp(24px,4vw,42px)] leading-[1.2] text-center font-bold;
+    @apply text-[clamp(24px,4.5vw,42px)] leading-[1.2] text-center font-bold;
   }
 
   .paragraph {
@@ -34,7 +38,7 @@ body {
 
 @layer components {
   .btn-gradient {
-    @apply text-base mt-6 px-8 py-3 cursor-pointer rounded-lg text-white font-bold border-0 transition-all scale-105;
+    @apply text-base mt-6 px-8 py-2 cursor-pointer rounded-lg text-white font-bold border-0;
     background: linear-gradient(to right, #c391d8, #fa9fa2);
     font-family: Arial, Helvetica, sans-serif;
   }

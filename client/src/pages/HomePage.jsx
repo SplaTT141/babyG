@@ -35,13 +35,13 @@ export function HomePage() {
         <main>
             {/*---------- Intro  section ----------*/}
             <section>
-                <div className="container mx-auto sm:flex my-12">
+                <div className="container md:w-4/5 mx-auto sm:flex my-12">
                     <div className="flex flex-col items-center justify-center sm:w-2/5">
                         <h1 className="heading">Žavūs drabužiai patiems <span className="text-purple">mažiausiems</span></h1>
                         <p className="paragraph">Atraskite mūsų patogių, stilingų ir prieinamų drabužių kolekciją, skirtą kūdikiams ir vaikams.</p>
-                        <button className="btn-gradient">Apsipirkti</button>
+                        <Link to="#" className="block btn-gradient  sm:mr-auto hover-scale-sm">Apsipirkti</Link>
 
-                        <div className="flex my-8 gap-3 text-center text-gray">
+                        <div className="flex my-8 gap-3 text-center text-gray sm:mr-auto">
                             <div className="w-20">
                                 <h3 className="text-purple text-2xl font-bold">100+</h3>
                                 <p>Laimingų šeimų</p>
@@ -77,7 +77,7 @@ export function HomePage() {
                                      className="
                                         flex flex-col items-center mt-5 w-9/10 
                                         border border-gray-200 rounded-4xl py-8
-                                        hover-scale-xl hover:shadow
+                                        hover-scale-sm hover:shadow
                                         sm:w-1/3 sm:mx-2 md:mx-3"
                                     key={age.name}
                                 >

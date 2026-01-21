@@ -17,18 +17,18 @@ export function Footer() {
                         <div>
                             <h4 className="text-xl mb-3">Prekės</h4>
                             <ul className="text-[#CDCDCD]">
-                                <li className="hover-scale"><Link to="#">Kūdikiams</Link></li>
-                                <li className="hover-scale"><Link to="#">Mažyliams</Link></li>
-                                <li className="hover-scale"><Link to="#">Vaikams</Link></li>
-                                <li className="hover-scale"><Link to="#">Išpardavimas</Link></li>
+                                <li className="hover-scale-md"><Link to="#">Kūdikiams</Link></li>
+                                <li className="hover-scale-md"><Link to="#">Mažyliams</Link></li>
+                                <li className="hover-scale-md"><Link to="#">Vaikams</Link></li>
+                                <li className="hover-scale-md"><Link to="#">Išpardavimas</Link></li>
                             </ul>
                         </div>
                         
                         <div>
                             <h4 className="text-xl mb-3">Kontaktai</h4>
                             <ul>
-                                <li className="hover-scale"><a className="flex gap-3 mb-2" href="tel:+37067190356"><img className="w-5" src={phone} alt="phone" />(+370) 67190356</a></li>
-                                <li className="hover-scale"><a className="flex gap-3" href="mailto:info@babyg.lt"><img className="w-5" src={mail} alt="mail" />info@babyg.lt</a></li>
+                                <li className="hover-scale-md"><a className="flex gap-3 mb-2" href="tel:+37067190356"><img className="w-5" src={phone} alt="phone" />(+370) 67190356</a></li>
+                                <li className="hover-scale-md"><a className="flex gap-3" href="mailto:info@babyg.lt"><img className="w-5" src={mail} alt="mail" />info@babyg.lt</a></li>
                             </ul>
                         </div>
                     </div>

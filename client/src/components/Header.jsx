@@ -31,15 +31,15 @@ export function Header() {
                 <div className="hidden sm:inline font-bold text-lg">
                     <ul className="flex gap-5">
                         {
-                            navLinks.map((link, index) => (<li className="hover:text-purple-900" key={index}><Link to={link.link}>{link.text}</Link></li>))
+                            navLinks.map((link, index) => (<li className="hover:text-purple-800 hover-scale-sm" key={index}><Link to={link.link}>{link.text}</Link></li>))
                         }
                     </ul>
                 </div>
                 
                 <div>
                     <ul className="flex gap-2">
-                        <li ><Link to="#"><img className="w-7 hover-scale-sm" src={bag} alt="bag" /></Link></li>
-                        <li><Link to="#"><img className="w-7 hover-scale-sm" src={heart} alt="heart" /></Link></li>
+                        <li ><Link to="#"><img className="w-7 hover-scale-xl" src={bag} alt="bag" /></Link></li>
+                        <li><Link to="#"><img className="w-7 hover-scale-xl" src={heart} alt="heart" /></Link></li>
                     </ul>
                 </div>
             </div>
