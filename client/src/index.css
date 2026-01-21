@@ -5,6 +5,10 @@ body {
   font-family: Calibri, sans-serif, "Segoe UI", "Gill Sans";
 }
 
+main {
+  min-height: calc(100vh - 160px - 101px);
+}
+
 @theme {
   --color-purple: #a679d2;
   --color-gray: #6e6982;

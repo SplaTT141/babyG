@@ -4,9 +4,9 @@ export function AboutPage() {
     return (
         <main>
             <section className="container mx-auto py-12 px-4">
-                <div className="flex flex-col items-center sm:flex-row gap-10">
+                <div className="flex flex-col items-center gap-10 md:flex-row lg:items-start">
 
-                    <div className="w-9/10 sm:order-2">
+                    <div className="w-9/10 md:order-2 lg:mt-3">
                         <span className="bg-white rounded-full p-3 mb-10">Apie BabyG</span>
                         <h1 className="heading mt-5 text-start">Prekiaujame su meile atrinktais drabužiais mažiausiems</h1>
                         <p className="paragraph text-start">
@@ -19,7 +19,7 @@ export function AboutPage() {
                             border border-white rounded-2xl
                             w-8/10 aspect-square relative
                             bg-[linear-gradient(135deg,#fbc2eb,#cdb8e3,#fceabb)] 
-                            sm:order-1 sm:w-full  lg:w-8/10 xl:w-5/10"
+                            md:order-1 md:w-full  lg:w-8/10 xl:w-5/10"
                     >
                         <img 
                             className="
