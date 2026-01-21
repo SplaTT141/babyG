@@ -182,7 +182,7 @@ export function HomePage() {
                                         <button 
                                             className="
                                             border border-gray-100 rounded-full
-                                            w-9/10 py-2 my-4 transition-all duration-40 cursor-pointer
+                                            w-9/10 py-2 my-4 transition-all duration-400 cursor-pointer
                                             font-bold hover:bg-purple hover:text-white">
                                             Pridėti į krepšelį
                                         </button>
@@ -191,6 +191,22 @@ export function HomePage() {
                             }
                         </div>
                     </div>
+            </section>
+            {/*---------- Subscription section ----------*/}
+            <section className="container mx-auto">
+                <div className="flex flex-col items-center mt-5 mb-15">
+                    <h1 className="heading">Likite informuoti!</h1>
+                    <p className="paragraph">Gaukite išskirtinius pasiūlymus ir naujų prekių pranešimus tiesiai į savo el. paštą</p>
+                    <div className="flex flex-col items-center bg-[#f7f1f6] rounded-2xl border border-gray-300 p-4 mt-5 text-center xl:w-1/2">
+                        <input 
+                            className="bg-white text-lg w-9/10 py-1 px-3 mt-3 rounded-lg focus:outline-none"
+                            placeholder="Įveskite savo elektroninį paštą"
+                            type="email" 
+                        />
+                        <button className="btn-gradient hover-scale-sm mb-3">Prenumeruoti</button>
+                        <p className="text-gray">Jokio šlamšto, galite bet kada atsisakyti prenumeratos. Mes gerbiame jūsų privatumą.</p>
+                    </div>
+                </div>
             </section>
         </main>
     )
