@@ -100,7 +100,7 @@ export function HomePage() {
                     <div className="flex flex-col items-center justify-center sm:w-2/5">
                         <h1 className="heading">Žavūs drabužiai patiems <span className="text-purple">mažiausiems</span></h1>
                         <p className="paragraph">Atraskite mūsų patogių, stilingų ir prieinamų drabužių kolekciją, skirtą kūdikiams ir vaikams.</p>
-                        <Link to="#" className="block btn-gradient  sm:mr-auto hover-scale-sm">Apsipirkti</Link>
+                        <Link to={'/kolekcija'} className="block btn-gradient  sm:mr-auto hover-scale-sm">Apsipirkti</Link>
 
                         <div className="flex my-8 gap-3 text-center text-gray sm:mr-auto">
                             <div className="w-20">
@@ -166,13 +166,14 @@ export function HomePage() {
                         <p className="paragraph mb-6">Atraskite mūsų populiariausias prekes, kurios derina komfortą ir stilių</p>
                         <div className="flex flex-col justify-center items-center pb-6 sm:flex-row sm:flex-wrap gap-4">
                             {
-                                popularProducts.map((dress) => (
+                                popularProducts.map((dress, index) => (
                                     <div 
                                     className="
                                     flex flex-col items-center cursor-pointer
                                     border w-9/10 border-gray-200 rounded-4xl
                                     hover-scale-sm hover:shadow
                                     sm:w-1/3 lg:w-1/4 sm:mx-2"
+                                    key={index}
                                     >
                                         <h2 className="text-xl font-bold my-4">{dress.name}</h2>
                                         <img className="w-4/5 rounded-xl h-64 object-cover" src={dress.img} alt={dress.name} />

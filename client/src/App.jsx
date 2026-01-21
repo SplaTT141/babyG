@@ -4,6 +4,7 @@ import { Footer } from "./components/Footer"
 import { HomePage } from "./pages/HomePage"
 import { AboutPage } from "./pages/AboutPage"
 import { ContactPage } from "./pages/ContactPage"
+import { CollectionPage } from "./pages/CollectionPage"
 
 export function App() {
 
@@ -11,9 +12,10 @@ export function App() {
     <BrowserRouter>
       <Header />
       <Routes>
-        <Route path="/" element={<HomePage />}></Route>
-        <Route path="/apie-mus" element={<AboutPage />}></Route>
-        <Route path="/kontaktai" element={<ContactPage />}></Route>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/apie-mus" element={<AboutPage />} />
+        <Route path="/kolekcija" element={<CollectionPage />} />
+        <Route path="/kontaktai" element={<ContactPage />} />
       </Routes>
       <Footer  />
     </BrowserRouter>
