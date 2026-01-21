@@ -3,6 +3,8 @@ import kids from "../assets/img/kids3.png"
 import baby from "../assets/img/baby.png"
 import kid from "../assets/img/kid.png"
 import toddler from "../assets/img/toddler.png"
+import product from "../assets/img/product.png"
+import product2 from "../assets/img/product2.png"
 import { Link } from "react-router-dom";
 
 export function HomePage() {
@@ -28,6 +30,65 @@ export function HomePage() {
                 img: toddler,
                 nameColor: "yellow",
                 btnText:"Drabužiai vaikams",
+            },
+        ]
+        
+        const popularProducts = [
+            {
+                name: 'Suknelė',
+                img: product,
+                gender: 'Mergaitė',
+                age: '1-3 metai',
+                price: "13,99",
+            },
+            {
+                name: 'Megztinis',
+                img: product2,
+                gender: 'Berniukas',
+                age: '0-3 mėnesiai',
+                price: "9,99",
+            },
+            {
+                name: 'Suknelė',
+                img: product,
+                gender: 'Mergaitė',
+                age: '1-3 metai',
+                price: "13,99",
+            },
+            {
+                name: 'Megztinis',
+                img: product2,
+                gender: 'Berniukas',
+                age: '0-3 mėnesiai',
+                price: "9,99",
+            },
+            {
+                name: 'Suknelė',
+                img: product,
+                gender: 'Mergaitė',
+                age: '1-3 metai',
+                price: "13,99",
+            },
+            {
+                name: 'Megztinis',
+                img: product2,
+                gender: 'Berniukas',
+                age: '0-3 mėnesiai',
+                price: "9,99",
+            },
+            {
+                name: 'Suknelė',
+                img: product,
+                gender: 'Mergaitė',
+                age: '1-3 metai',
+                price: "13,99",
+            },
+            {
+                name: 'Megztinis',
+                img: product2,
+                gender: 'Berniukas',
+                age: '0-3 mėnesiai',
+                price: "9,99",
             },
         ]
 
@@ -97,6 +158,39 @@ export function HomePage() {
                     }
                     </div>
                 </div>
+            </section>
+            {/*---------- Popular products section ----------*/}
+            <section  className="bg-white pt-5">
+                    <div className="container mx-auto">
+                        <h1 className="heading">Populiariausios prekės</h1>
+                        <p className="paragraph mb-6">Atraskite mūsų populiariausias prekes, kurios derina komfortą ir stilių</p>
+                        <div className="flex flex-col justify-center items-center pb-6 sm:flex-row sm:flex-wrap gap-4">
+                            {
+                                popularProducts.map((dress) => (
+                                    <div 
+                                    className="
+                                    flex flex-col items-center cursor-pointer
+                                    border w-9/10 border-gray-200 rounded-4xl
+                                    hover-scale-sm hover:shadow
+                                    sm:w-1/3 lg:w-1/4 sm:mx-2"
+                                    >
+                                        <h2 className="text-xl font-bold my-4">{dress.name}</h2>
+                                        <img className="w-4/5 rounded-xl h-64 object-cover" src={dress.img} alt={dress.name} />
+                                        <p className="paragraph mt-2">{dress.gender}</p>
+                                        <h3  className="text-lg">{dress.age}</h3>
+                                        <h2 className="text-orange mt-4 text-2xl">{dress.price}€</h2>
+                                        <button 
+                                            className="
+                                            border border-gray-100 rounded-full
+                                            w-9/10 py-2 my-4 transition-all duration-40 cursor-pointer
+                                            font-bold hover:bg-purple hover:text-white">
+                                            Pridėti į krepšelį
+                                        </button>
+                                    </div>
+                                ))
+                            }
+                        </div>
+                    </div>
             </section>
         </main>
     )
