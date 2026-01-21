@@ -80,6 +80,26 @@ export function AboutPage() {
                     </div>
                 </div>
             </section>
+            <section className="bg-white pt-10 pb-10">
+                <div className="grid grid-cols-2 gap-y-5 gap-1 sm:grid-cols-4 place-items-center">
+                    <div className="flex flex-col items-center">
+                        <h2 className="text-purple text-2xl font-bold">100+</h2>
+                        <p className="text-gray text-lg">Laimingų klientų</p>
+                    </div>
+                    <div className="flex flex-col items-center">
+                        <h2 className="text-orange text-2xl font-bold">70+</h2>
+                        <p className="text-gray text-lg">Drabužių modelių</p>
+                    </div>
+                    <div className="flex flex-col items-center">
+                        <h2 className="text-yellow text-2xl font-bold">4.9</h2>
+                        <p className="text-gray text-lg">Vidutinis įvertinimas</p>
+                    </div>
+                    <div className="flex flex-col items-center">
+                        <h2 className="text-purple text-2xl font-bold">3+</h2>
+                        <p className="text-gray text-lg">Metų patirtis</p>
+                    </div>
+                </div>
+            </section>
         </main>
     )
 }
