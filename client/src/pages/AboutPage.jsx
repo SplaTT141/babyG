@@ -1,25 +1,46 @@
 import logo from "../assets/img/logo-g.png"
+import heart from "../assets/img/heart-orange.svg"
+import medal from "../assets/img/medal.svg"
+import group from "../assets/img/group.svg"
+import leaf from "../assets/img/leaf.svg"
 
 export function AboutPage() {
+
+    const values = [
+        {
+            name: "Meilė mažyliams",
+            img: heart,
+            text: "Kiekvienas mūsų drabužis parinktas su meile ir rūpesčiu jūsų vaikams."
+        },
+        {
+            name: "Kokybė",
+            img: medal,
+            text: "Naudojame tik aukščiausios kokybės, sertifikuotus produktus"
+        },
+        {
+            name: "Šeima",
+            img: group,
+            text: "Esame šeimos verslas, suprantantis tėvų poreikius."
+        },
+        {
+            name: "Meilė mažyliams",
+            img: leaf,
+            text: "Rūpinamės aplinka ir prekiaujame ekologiška produkcija."
+        },
+    ]
+
     return (
         <main>
-            <section className="container mx-auto py-12 px-4">
-                <div className="flex flex-col items-center gap-10 md:flex-row lg:items-start">
+            <section className="container mx-auto p-12 px-4 sm:w-9/10">
+                <div className="flex flex-col items-center justify-center gap-10 sm:flex-row">
 
-                    <div className="w-9/10 md:order-2 lg:mt-3">
-                        <span className="bg-white rounded-full p-3 mb-10">Apie BabyG</span>
-                        <h1 className="heading mt-5 text-start">Prekiaujame su meile atrinktais drabužiais mažiausiems</h1>
-                        <p className="paragraph text-start">
-                            Jau daugiau nei 3 metus prekiaujame kokybiškais ir patogiais drabužiais Lietuvos mažyliams. Kruopščiai atrenkame kiekvieną gaminį, kad jis būtų ne tik stilingas, bet ir patogus kasdieniams žaidimams bei nuotykiams. Mūsų tikslas – kad kiekvienas vaikas jaustųsi laimingas, patogiai judėtų ir atrodytų nuostabiai. Siekiame, kad tėvai galėtų drąsiai rinktis drabužius, žinodami, jog jų mažyliai vilki saugius, patikimus ir ilgaamžius gaminius.
-                        </p>
-                    </div>
 
                     <div 
                         className="
                             border border-white rounded-2xl
                             w-8/10 aspect-square relative
                             bg-[linear-gradient(135deg,#fbc2eb,#cdb8e3,#fceabb)] 
-                            md:order-1 md:w-full  lg:w-8/10 xl:w-5/10"
+                            shadow-md xl:w-1/2"
                     >
                         <img 
                             className="
@@ -29,6 +50,33 @@ export function AboutPage() {
                             src={logo}
                             alt="logo"
                         />
+                    </div>
+
+                    <div className="w-9/10">
+                        <span className="bg-white rounded-full p-3 mb-10">Apie BabyG</span>
+                        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mt-5 text-start">Prekiaujame su meile atrinktais drabužiais mažiausiems</h2>
+                        <p className="paragraph text-start">
+                            Jau daugiau nei 3 metus prekiaujame kokybiškais ir patogiais drabužiais Lietuvos mažyliams. Kruopščiai atrenkame kiekvieną gaminį, kad jis būtų ne tik stilingas, bet ir patogus kasdieniams žaidimams bei nuotykiams. Mūsų tikslas – kad kiekvienas vaikas jaustųsi laimingas, patogiai judėtų ir atrodytų nuostabiai. Siekiame, kad tėvai galėtų drąsiai rinktis drabužius, žinodami, jog jų mažyliai vilki saugius, patikimus ir ilgaamžius gaminius.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section className="bg-white pt-7 pb-10">
+                <div className="container mx-auto w-9/10">
+                    <h1 className="heading">Mūsų vertybės</h1>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 place-items-center">
+                        {
+                            values.map((value, index) => (
+                                <div className="card w-72 sm:h-80 md:h-70 lg:h-60 p-7 text-center" key={index}>
+                                    <div className="bg-amber-50 rounded-full p-3">
+                                        <img src={value.img} alt={value.name} />
+                                    </div>
+                                    <h3 className="text-lg font-bold mt-3">{value.name}</h3>
+                                    <p className="text-gray text-sm mt-2">{value.text}</p>
+                                </div>
+                            ))
+                        }
                     </div>
                 </div>
             </section>

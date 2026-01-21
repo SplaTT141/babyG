@@ -136,8 +136,7 @@ export function HomePage() {
                         ageCards.map((age) => (
                                 <div
                                      className="
-                                        flex flex-col items-center mt-5 w-9/10 
-                                        border border-gray-200 rounded-4xl py-8
+                                        card py-8 w-9/10
                                         hover-scale-sm hover:shadow
                                         sm:w-1/3 sm:mx-2 md:mx-3"
                                     key={age.name}
@@ -169,8 +168,7 @@ export function HomePage() {
                                 popularProducts.map((dress, index) => (
                                     <div 
                                     className="
-                                    flex flex-col items-center cursor-pointer
-                                    border w-9/10 border-gray-200 rounded-4xl
+                                    card cursor-pointer w-9/10
                                     hover-scale-sm hover:shadow
                                     sm:w-1/3 lg:w-1/4 sm:mx-2"
                                     key={index}

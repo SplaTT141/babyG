@@ -46,4 +46,8 @@ main {
     background: linear-gradient(to right, #c391d8, #fa9fa2);
     font-family: Arial, Helvetica, sans-serif;
   }
+
+  .card {
+    @apply flex flex-col items-center mt-5 border border-gray-200 rounded-4xl;
+  }
 }
