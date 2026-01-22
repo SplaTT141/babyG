@@ -23,7 +23,7 @@ export function AboutPage() {
             text: "Esame šeimos verslas, suprantantis tėvų poreikius."
         },
         {
-            name: "Meilė mažyliams",
+            name: "Ekologija",
             img: leaf,
             text: "Rūpinamės aplinka ir prekiaujame ekologiška produkcija."
         },
@@ -65,10 +65,11 @@ export function AboutPage() {
             <section className="section-white pt-7 pb-10">
                 <div className="container mx-auto w-9/10">
                     <h1 className="heading">Mūsų vertybės</h1>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 place-items-center">
+                    {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-6 place-items-center"> */}
+                    <div className="flex flex-col md:flex-row items-stretch gap-2">
                         {
                             values.map((value, index) => (
-                                <div className="card w-70 p-7 text-center" key={index}>
+                                <div className="card flex flex-col flex-1 p-7 text-center" key={index}>
                                     <div className="bg-amber-50 rounded-full p-3">
                                         <img src={value.img} alt={value.name} />
                                     </div>
