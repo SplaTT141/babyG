@@ -1,5 +1,9 @@
 export function CollectionPage() {
     return (
-        <h1>collection  page</h1>
+        <main>
+            <section className="container">
+                <h1>Collection page</h1>
+            </section>
+        </main>
     )
 }

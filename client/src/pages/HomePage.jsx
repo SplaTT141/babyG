@@ -127,7 +127,7 @@ export function HomePage() {
                 </div>
             </section>
             {/*---------- Age cards section ----------*/}
-            <section className="bg-white pt-5">
+            <section className="section-white pt-5">
                 <div className="container mx-auto pb-5">
                     <h1 className="heading">Pirkite pagal amžių</h1>
                     <p className="paragraph">Išsirinkite tobulus drabužius kiekvienam jūsų vaiko augimo etapui.</p>
@@ -159,7 +159,7 @@ export function HomePage() {
                 </div>
             </section>
             {/*---------- Popular products section ----------*/}
-            <section  className="bg-white pt-5">
+            <section  className="section-white pt-5">
                     <div className="container mx-auto">
                         <h1 className="heading">Populiariausios prekės</h1>
                         <p className="paragraph mb-6">Atraskite mūsų populiariausias prekes, kurios derina komfortą ir stilių</p>
@@ -202,7 +202,7 @@ export function HomePage() {
                             placeholder="Įveskite savo elektroninį paštą"
                             type="email" 
                         />
-                        <button className="btn-gradient hover-scale-sm mb-3">Prenumeruoti</button>
+                        <button type="submit" className="btn-gradient hover-scale-sm mb-3">Prenumeruoti</button>
                         <p className="text-gray">Jokio šlamšto, galite bet kada atsisakyti prenumeratos. Mes gerbiame jūsų privatumą.</p>
                     </div>
                 </div>

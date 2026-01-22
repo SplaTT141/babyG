@@ -28,7 +28,7 @@ export function Header() {
                     <img className="w-22" src={logo} alt="logo" />
                 </Link>
 
-                <div className="hidden sm:inline font-bold text-lg">
+                <div className="hidden sm:inline font-bold text-md">
                     <ul className="flex gap-5">
                         {
                             navLinks.map((link, index) => (<li className=" hover-scale-sm" key={index}><Link to={link.link}>{link.text}</Link></li>))

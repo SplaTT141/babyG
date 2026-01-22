@@ -62,7 +62,7 @@ export function AboutPage() {
                 </div>
             </section>
 
-            <section className="bg-white pt-7 pb-10">
+            <section className="section-white pt-7 pb-10">
                 <div className="container mx-auto w-9/10">
                     <h1 className="heading">Mūsų vertybės</h1>
                     <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 place-items-center">
@@ -80,7 +80,7 @@ export function AboutPage() {
                     </div>
                 </div>
             </section>
-            <section className="bg-white pt-10 pb-10">
+            <section className="section-white pt-10 pb-10">
                 <div className="grid grid-cols-2 gap-y-5 gap-1 sm:grid-cols-4 place-items-center">
                     <div className="flex flex-col items-center">
                         <h2 className="text-purple text-2xl font-bold">100+</h2>

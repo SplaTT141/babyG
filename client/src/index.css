@@ -10,7 +10,7 @@ main {
 }
 
 .container {
-  @apply w-9/10 mx-auto;
+  @apply w-8/10 mx-auto;
 }
 
 @theme {
@@ -50,6 +50,10 @@ main {
   .paragraph-h2 {
     @apply mt-4 text-[clamp(12px\\,1.6vw\\,15px)] leading-[1.6] text-gray;
   }
+
+  .section-white {
+    @apply bg-[#FBF4F6];
+  }
 }
 
 @layer components {
@@ -60,6 +64,6 @@ main {
   }
 
   .card {
-    @apply flex flex-col items-center mt-5 border border-gray-200 rounded-4xl hover:shadow;
+    @apply flex flex-col items-center mt-5 border border-gray-200 rounded-4xl hover:shadow bg-white;
   }
 }
