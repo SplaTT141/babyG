@@ -9,6 +9,10 @@ main {
   min-height: calc(100vh - 160px - 101px);
 }
 
+.container {
+  @apply w-9/10 mx-auto;
+}
+
 @theme {
   --color-purple: #a679d2;
   --color-gray: #6e6982;
@@ -32,11 +36,19 @@ main {
 
 @layer base {
   .heading {
-    @apply text-[clamp(24px,4.5vw,42px)] leading-[1.2] text-center font-bold;
+    @apply text-[clamp(24px,4.5vw,28px)] leading-[1.2] text-center font-bold;
+  }
+
+  .heading-h2 {
+    @apply text-[clamp(18px,4.5vw,22px)] leading-[1.2] font-semibold;
   }
 
   .paragraph {
-    @apply mt-4 text-[clamp(16px,2.5vw,20px)] text-gray text-center;
+    @apply mt-4 text-[clamp(14px,2.5vw,17px)] text-gray text-center;
+  }
+
+  .paragraph-h2 {
+    @apply mt-4 text-[clamp(12px\\,1.6vw\\,15px)] leading-[1.6] text-gray;
   }
 }
 
@@ -48,6 +60,6 @@ main {
   }
 
   .card {
-    @apply flex flex-col items-center mt-5 border border-gray-200 rounded-4xl;
+    @apply flex flex-col items-center mt-5 border border-gray-200 rounded-4xl hover:shadow;
   }
 }

@@ -40,7 +40,7 @@ export function AboutPage() {
                             border border-white rounded-2xl
                             w-8/10 aspect-square relative
                             bg-[linear-gradient(135deg,#fbc2eb,#cdb8e3,#fceabb)] 
-                            shadow-md xl:w-1/2"
+                            shadow-md lg:w-1/3"
                     >
                         <img 
                             className="
@@ -52,7 +52,7 @@ export function AboutPage() {
                         />
                     </div>
 
-                    <div className="w-9/10">
+                    <div className="w-9/10 lg:w-2/5">
                         <span className="bg-white rounded-full p-3 mb-10">Apie BabyG</span>
                         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mt-5 text-start">Prekiaujame su meile atrinktais drabužiais mažiausiems</h2>
                         <p className="paragraph text-start">
@@ -68,7 +68,7 @@ export function AboutPage() {
                     <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 place-items-center">
                         {
                             values.map((value, index) => (
-                                <div className="card w-72 sm:h-80 md:h-70 lg:h-60 p-7 text-center" key={index}>
+                                <div className="card w-70 p-7 text-center" key={index}>
                                     <div className="bg-amber-50 rounded-full p-3">
                                         <img src={value.img} alt={value.name} />
                                     </div>
