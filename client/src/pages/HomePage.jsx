@@ -202,7 +202,7 @@ export function HomePage() {
                     <p className="paragraph">Gaukite išskirtinius pasiūlymus ir naujų prekių pranešimus tiesiai į savo el. paštą</p>
                     <div className="flex flex-col items-center bg-[#f7f1f6] rounded-2xl border border-gray-300 p-4 mt-5 text-center xl:w-1/2">
                         <input 
-                            className="bg-white text-lg w-9/10 py-1 px-3 mt-3 rounded-lg focus:outline-none placeholder:italic"
+                            className="input bg-white"
                             placeholder="Įveskite savo elektroninį paštą"
                             type="email" 
                         />

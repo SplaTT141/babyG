@@ -80,17 +80,17 @@ export function ContactPage() {
                                     <div className="flex flex-col sm:flex-row gap-4">
                                         <div className="flex flex-col w-full">
                                             <label htmlFor="name">Vardas</label>
-                                            <input className="bg-gray-50 w-full py-1 px-3 rounded-md focus:outline-none mt-1 placeholder:italic" type="text" id="name" placeholder="Jūsų vardas" required/>
+                                            <input className="input" type="text" id="name" placeholder="Jūsų vardas" required/>
                                         </div>
                                         <div className="flex flex-col w-full">
                                             <label htmlFor="email">El. paštas</label>
-                                            <input className="bg-gray-50 w-full py-1 px-3 rounded-md focus:outline-none mt-1 placeholder:italic" type="email" id="email" placeholder="El. paštas" required/>
+                                            <input className="input" type="email" id="email" placeholder="El. paštas" required/>
                                         </div>
                                     </div>
                                     <label htmlFor="theme">Tema</label>
-                                    <input className="bg-gray-50 w-full py-1 px-3 rounded-md focus:outline-none mt-1 placeholder:italic" type="text" id="theme" placeholder="Žinutės tema"/>
+                                    <input className="input" type="text" id="theme" placeholder="Žinutės tema"/>
                                     <label htmlFor="message">Žinutė</label>
-                                    <textarea className="bg-gray-50 w-full py-1 px-3 rounded-md focus:outline-none mt-1 min-h-20 placeholder:italic" name="message" id="message" placeholder="Jūsų žinutė..."></textarea>
+                                    <textarea className="input min-h-20" name="message" id="message" placeholder="Jūsų žinutė..."></textarea>
                                     <button type="submit" className="bg-orange-500 hover:brightness-120 text-white mt-5 w-full mx-auto py-1.5 rounded-xl cursor-pointer">Siųsti žinutę</button>
                                 </form>
                             </div>

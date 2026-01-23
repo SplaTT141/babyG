@@ -68,6 +68,10 @@ main {
   .section-white {
     @apply bg-[#FBF4F6];
   }
+
+  .input {
+    @apply bg-gray-50 w-full py-1 px-3 rounded-md mt-1 placeholder:italic  focus:outline-orange-400;
+  }
 }
 
 @layer components {
