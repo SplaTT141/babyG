@@ -3,7 +3,7 @@ import bag from "../assets/img/bag.svg";
 import heart from "../assets/img/heart.svg";
 import hamburger from "../assets/img/hamburger.svg";
 import xmark from "../assets/img/xmark.svg";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { useState } from "react";
 
 export function Header() {
@@ -14,6 +14,7 @@ export function Header() {
         {text: 'Apie mus', link: '/apie-mus'},
         {text: 'Kolekcija', link: '/kolekcija'},
         {text: 'Kontaktai', link: '/kontaktai'},
+        {text: 'login(laikina)', link: '/login'},
     ]
 
     return(
@@ -31,7 +32,7 @@ export function Header() {
                 <div className="hidden sm:inline font-bold text-md">
                     <ul className="flex gap-5">
                         {
-                            navLinks.map((link, index) => (<li className=" hover-scale-sm" key={index}><Link to={link.link}>{link.text}</Link></li>))
+                            navLinks.map((link, index) => (<li className=" hover-scale-sm" key={index}><NavLink to={link.link}>{link.text}</NavLink></li>))
                         }
                     </ul>
                 </div>

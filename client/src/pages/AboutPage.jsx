@@ -34,7 +34,6 @@ export function AboutPage() {
             <section className="container mx-auto p-12 px-4 sm:w-9/10">
                 <div className="flex flex-col items-center justify-center gap-10 sm:flex-row">
 
-
                     <div 
                         className="
                             border border-white rounded-2xl
@@ -54,8 +53,8 @@ export function AboutPage() {
 
                     <div className="w-9/10 lg:w-2/5">
                         <span className="bg-white rounded-full p-3 mb-10">Apie BabyG</span>
-                        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mt-5 text-start">Prekiaujame su meile atrinktais drabužiais mažiausiems</h2>
-                        <p className="paragraph text-start">
+                        <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mt-5 text-start">Prekiaujame su meile atrinktais drabužiais mažiausiems</h2>
+                        <p className="paragraph-h2 text-start">
                             Jau daugiau nei 3 metus prekiaujame kokybiškais ir patogiais drabužiais Lietuvos mažyliams. Kruopščiai atrenkame kiekvieną gaminį, kad jis būtų ne tik stilingas, bet ir patogus kasdieniams žaidimams bei nuotykiams. Mūsų tikslas – kad kiekvienas vaikas jaustųsi laimingas, patogiai judėtų ir atrodytų nuostabiai. Siekiame, kad tėvai galėtų drąsiai rinktis drabužius, žinodami, jog jų mažyliai vilki saugius, patikimus ir ilgaamžius gaminius.
                         </p>
                     </div>

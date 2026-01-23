@@ -163,28 +163,32 @@ export function HomePage() {
                     <div className="container mx-auto">
                         <h1 className="heading">Populiariausios prekės</h1>
                         <p className="paragraph mb-6">Atraskite mūsų populiariausias prekes, kurios derina komfortą ir stilių</p>
-                        <div className="flex flex-col justify-center items-center pb-6 sm:flex-row sm:flex-wrap gap-4">
+                        <div className="flex flex-col justify-center items-center pb-6 sm:flex-row sm:flex-wrap">
                             {
                                 popularProducts.map((dress, index) => (
                                     <div 
-                                    className="
-                                    card cursor-pointer w-9/10
-                                    hover-scale-sm hover:shadow
-                                    sm:w-1/3 lg:w-1/4 sm:mx-2"
-                                    key={index}
+                                        key={index}
+                                        className="
+                                        card cursor-pointer
+                                        hover-scale-sm hover:shadow
+                                        w-60 sm:mx-2 px-5 h-98"
                                     >
-                                        <h2 className="text-xl font-bold my-4">{dress.name}</h2>
-                                        <img className="w-4/5 rounded-xl h-64 object-cover" src={dress.img} alt={dress.name} />
-                                        <p className="paragraph mt-2">{dress.gender}</p>
-                                        <h3  className="text-lg">{dress.age}</h3>
-                                        <h2 className="text-orange mt-4 text-2xl">{dress.price}€</h2>
-                                        <button 
-                                            className="
-                                            border border-gray-100 rounded-full
-                                            w-9/10 py-2 my-4 transition-all duration-400 cursor-pointer
-                                            font-bold hover:bg-purple hover:text-white">
-                                            Pridėti į krepšelį
-                                        </button>
+                                        <h2 className="text-md font-bold my-4">{dress.name}</h2>
+                                        <div className="w-50">
+                                            <img className="w-full h-44 rounded-xl object-cover" src={dress.img} alt={dress.name} />
+                                        </div>
+                                        <div className="flex flex-col w-full items-center">
+                                            <p className="paragraph mt-2 mr-auto">{dress.gender}</p>
+                                            <h3  className="text-sm mr-auto">{dress.age}</h3>
+                                            <h2 className="text-orange mt-2 text-lg mr-auto">{dress.price}€</h2>
+                                            <button 
+                                                className="
+                                                border border-gray-100 rounded-full
+                                                w-9/10 py-1 my-4 transition-all duration-400 cursor-pointer
+                                                font-bold hover:bg-purple hover:text-white">
+                                                Pridėti į krepšelį
+                                            </button>
+                                        </div>
                                     </div>
                                 ))
                             }
@@ -198,7 +202,7 @@ export function HomePage() {
                     <p className="paragraph">Gaukite išskirtinius pasiūlymus ir naujų prekių pranešimus tiesiai į savo el. paštą</p>
                     <div className="flex flex-col items-center bg-[#f7f1f6] rounded-2xl border border-gray-300 p-4 mt-5 text-center xl:w-1/2">
                         <input 
-                            className="bg-white text-lg w-9/10 py-1 px-3 mt-3 rounded-lg focus:outline-none"
+                            className="bg-white text-lg w-9/10 py-1 px-3 mt-3 rounded-lg focus:outline-none placeholder:italic"
                             placeholder="Įveskite savo elektroninį paštą"
                             type="email" 
                         />
