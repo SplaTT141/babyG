@@ -117,7 +117,7 @@ export function CollectionPage() {
                                         <button 
                                             className="
                                             border border-gray-100 rounded-full
-                                            w-9/10 py-1 my-4 transition-all duration-400 cursor-pointer
+                                            w-9/10 py-1 my-4 transition-all duration-200 cursor-pointer
                                             font-bold hover:bg-purple hover:text-white">
                                             Pridėti į krepšelį
                                         </button>

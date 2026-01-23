@@ -7,7 +7,7 @@ export function LoginPage() {
     return (
         <main>
             <section  className="container mx-auto">
-                <div className="flex flex-col items-center mt-5">
+                <div className="flex flex-col items-center pt-7">
                     <div className="flex flex-col items-startt mt-5 bg-white p-5 rounded-xl w-full sm:w-100">
                         <img className="w-13 mb-5" src={logo} alt="logo" />
                         <div className="mb-3">
