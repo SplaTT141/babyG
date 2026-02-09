@@ -49,7 +49,7 @@ export function Header() {
                 <div className={`sm:hidden p-3 ${!isOpen ? "hidden" : ""}`}>
                     <ul className="text-lg font-bold border-t border-gray-300">
                         {
-                            navLinks.map((link, index) => (<li className="hover:bg-gray-50 p-2" key={index}><Link to={link.link}>{link.text}</Link></li>))
+                            navLinks.map((link, index) => (<li onClick={() => {setIsOpen(false)}} className="hover:bg-gray-50 p-2" key={index}><Link to={link.link}>{link.text}</Link></li>))
                         }
                     </ul>
                 </div>
