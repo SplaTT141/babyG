@@ -5,7 +5,6 @@ import { useState } from "react"
 import { BACKEND_URL } from "../config/env.js"
 
 export function LoginPage() {
-
     const [usernameOrEmail, setUsernameOrEmail] = useState('');
     const [password, setPassword] = useState('');
 
@@ -14,7 +13,9 @@ export function LoginPage() {
 
         fetch(`${BACKEND_URL}/login`, {
             method: 'POST',
-            headers: {'Content-Type': 'application/json'},
+            headers: {
+                'Content-Type': 'application/json'
+            },
             body: JSON.stringify({
                 usernameOrEmail,
                 password,
