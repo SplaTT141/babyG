@@ -1,10 +1,10 @@
-import star from "../assets/img/star.svg";
-import kids from "../assets/img/kids3.png"
-import baby from "../assets/img/baby.png"
-import kid from "../assets/img/kid.png"
-import toddler from "../assets/img/toddler.png"
-import product from "../assets/img/product.png"
-import product2 from "../assets/img/product2.png"
+import star from "../../assets/img/star.svg";
+import kids from "../../assets/img/kids3.png"
+import baby from "../../assets/img/baby.png"
+import kid from "../../assets/img/kid.png"
+import toddler from "../../assets/img/toddler.png"
+import product from "../../assets/img/product.png"
+import product2 from "../../assets/img/product2.png"
 import { Link } from "react-router-dom";
 
 export function HomePage() {
@@ -96,13 +96,13 @@ export function HomePage() {
         <main>
             {/*---------- Intro  section ----------*/}
             <section>
-                <div className="container md:w-4/5 mx-auto sm:flex my-12">
-                    <div className="flex flex-col items-center justify-center sm:w-2/5">
+                <div className="container md:w-4/5 mx-auto md:flex my-12">
+                    <div className="flex flex-col items-center justify-center md:w-2/5">
                         <h1 className="heading">Žavūs drabužiai patiems <span className="text-purple">mažiausiems</span></h1>
                         <p className="paragraph">Atraskite mūsų patogių, stilingų ir prieinamų drabužių kolekciją, skirtą kūdikiams ir vaikams.</p>
-                        <Link to={'/kolekcija'} className="block btn-gradient  sm:mr-auto hover-scale-sm">Apsipirkti</Link>
+                        <Link to={'/kolekcija'} className="block btn-gradient  md:mr-auto hover-scale-sm">Apsipirkti</Link>
 
-                        <div className="flex my-8 gap-3 text-center text-gray sm:mr-auto">
+                        <div className="flex my-8 gap-3 text-center text-gray dm:mr-auto">
                             <div className="w-20">
                                 <h3 className="text-purple text-2xl font-bold">100+</h3>
                                 <p>Laimingų šeimų</p>
@@ -121,7 +121,7 @@ export function HomePage() {
                         </div>
                     </div>
 
-                    <div className="flex justify-center sm:w-3/5">
+                    <div className="flex justify-center md:w-3/5">
                         <img className="w-9/10 lg:w-7/10 rounded-xl object-cover" src={kids} alt="kids" />
                     </div>
                 </div>
