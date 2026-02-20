@@ -30,7 +30,6 @@ export async function postLogin(req, res) {
 
         /* ==== JWT generation ==== */
         const payload = {
-            isLoggedIn: true,
             id: user.id,
             username: user.username,
             email: user.email,

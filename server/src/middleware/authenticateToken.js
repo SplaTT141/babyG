@@ -2,20 +2,24 @@ import jwt from 'jsonwebtoken';
 import { JWT_SECRET } from '../env.js';
 
 export function authenticateToken(req, res, next) {
-    console.log(req.user);
     const token = req.cookies.token;
+    req.user = { isLoggedIn: false };
 
     if (!token) {
         return next();
     }
 
-    jwt.verify(token, JWT_SECRET, (error, decoded) => {
-        if (error) {
-            return res.status(403).json({ status: 'error', message: "Blogas arba nebegaliojantis token'as" });
-        }
+    try {
+        const decoded = jwt.verify(token, JWT_SECRET);
 
-        req.user = decoded;
-        console.log(req.user);
-        next();
-    })
+        req.user = {
+            ...decoded,
+            isLoggedIn: true,
+        };
+
+        return next();
+    }
+    catch (error) {
+        return next();
+    }
 }

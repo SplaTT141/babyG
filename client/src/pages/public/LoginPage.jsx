@@ -6,8 +6,8 @@ import {useNavigate} from 'react-router-dom'
 import { BACKEND_URL } from "../../config/env.js"
 
 export function LoginPage() {
-    const [usernameOrEmail, setUsernameOrEmail] = useState('');
-    const [password, setPassword] = useState('');
+    const [usernameOrEmail, setUsernameOrEmail] = useState('testing');
+    const [password, setPassword] = useState('testing');
     const [message, setMessage] = useState({status: '', text: ''});
     const navigate = useNavigate();
 
@@ -56,12 +56,12 @@ export function LoginPage() {
                             <label className="text-md" htmlFor="">El. paštas arba slapyvardis</label>
                             <div className="flex bg-gray-50 p-2 rounded-md border  gap-3 border-white focus-within:border-orange-400">
                                 <img className="w-5" src={user} alt="user" />
-                                <input onChange={(e) => {setUsernameOrEmail(e.target.value)}} value="testing" className="focus:outline-0 w-1/1" type="text" required/>
+                                <input onChange={(e) => {setUsernameOrEmail(e.target.value)}} className="focus:outline-0 w-1/1" type="text" />
                             </div>
                             <label htmlFor="">Slaptažodis</label>
                             <div className="flex bg-gray-50 p-2 rounded-md border border-white focus-within:border-orange-400 mb-5 gap-3">
                                 <img className="w-5" src={lock} alt="lock" />
-                                <input onChange={(e) => {setPassword(e.target.value)}} value="testing" className="focus:outline-0 w-1/1" type="password" required/>
+                                <input onChange={(e) => {setPassword(e.target.value)}} className="focus:outline-0 w-1/1" type="password" />
                             </div>
                             <div className="font-bold">
                                 {message.status === 'success' && <div className="text-green-500">{message.text}</div>}

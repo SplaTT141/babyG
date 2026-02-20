@@ -5,6 +5,7 @@ import { PORT } from "./src/env.js";
 import { postLogin } from "./src/api/postLogin.js";
 import { authenticateToken } from "./src/middleware/authenticateToken.js";
 import { getLogin } from "./src/api/getLogin.js";
+import { isAdmin } from "./src/middleware/isAdmin.js";
 
 const app = express();
 
