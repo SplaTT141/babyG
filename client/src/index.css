@@ -81,6 +81,10 @@ main {
     font-family: Arial, Helvetica, sans-serif;
   }
 
+  .btn-orange {
+    @apply bg-orange-500 hover:brightness-120 text-white mt-5 w-full mx-auto py-1.5 rounded-xl cursor-pointer;
+  }
+
   .card {
     @apply flex flex-col items-center mt-5 border border-gray-200 rounded-4xl hover:shadow bg-white;
   }

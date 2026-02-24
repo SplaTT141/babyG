@@ -91,7 +91,7 @@ export function ContactPage() {
                                     <input className="input" type="text" id="theme" placeholder="Žinutės tema"/>
                                     <label htmlFor="message">Žinutė</label>
                                     <textarea className="input min-h-20" name="message" id="message" placeholder="Jūsų žinutė..."></textarea>
-                                    <button type="submit" className="bg-orange-500 hover:brightness-120 text-white mt-5 w-full mx-auto py-1.5 rounded-xl cursor-pointer">Siųsti žinutę</button>
+                                    <button type="submit" className="btn-orange">Siųsti žinutę</button>
                                 </form>
                             </div>
                         </div>

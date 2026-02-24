@@ -71,7 +71,7 @@ export function LoginPage() {
                                 {message.status === 'success' && <div className="text-green-500">{message.text}</div>}
                                 {message.status === 'error' && <div className="text-red-500">{message.text}</div>}
                             </div>
-                            <button type="submit" className="bg-orange-500 hover:brightness-120 text-white mt-5 w-full mx-auto py-1.5 rounded-xl cursor-pointer">Prisijungti</button>
+                            <button type="submit" className="btn-orange">Prisijungti</button>
                         </form>
                     </div>
                 </div>

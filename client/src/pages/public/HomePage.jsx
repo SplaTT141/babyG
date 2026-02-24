@@ -19,14 +19,14 @@ export function HomePage() {
             },
             {
                 name: 'Mažylis',
-                age: '1-2 metų',
+                age: '1-3 metų',
                 img: kid,
                 nameColor: "orange",
                 btnText:"Drabužiai mažyliams",
             },
             {
                 name: 'Vaikas',
-                age: '5-7 metų',
+                age: '4-7 metų',
                 img: toddler,
                 nameColor: "yellow",
                 btnText:"Drabužiai vaikams",
@@ -171,10 +171,10 @@ export function HomePage() {
                                         className="
                                         card cursor-pointer
                                         hover-scale-sm hover:shadow
-                                        w-60 sm:mx-2 px-5 h-98"
+                                        w-80 sm:mx-2 px-5 h-98"
                                     >
                                         <h2 className="text-md font-bold my-4">{dress.name}</h2>
-                                        <div className="w-50">
+                                        <div className="w-55">
                                             <img className="w-full h-44 rounded-xl object-cover" src={dress.img} alt={dress.name} />
                                         </div>
                                         <div className="flex flex-col w-full items-center">

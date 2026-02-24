@@ -45,7 +45,7 @@ export function Header() {
                     ?
                     <div>
                         <ul className="flex gap-2">
-                            <li ><Link to={'/dashboard'}><img className="w-7 hover-scale-xl" src={dashboard} alt="dashboard" /></Link></li>
+                            <li ><Link to={'/admin/dashboard'}><img className="w-7 hover-scale-xl" src={dashboard} alt="dashboard" /></Link></li>
                             <li><Link to={'/logout'}><img className="w-7 hover-scale-xl" src={logout} alt="logout" /></Link></li>
                         </ul>
                     </div>
