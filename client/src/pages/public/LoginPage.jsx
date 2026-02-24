@@ -1,14 +1,16 @@
 import logo from "../../assets/img/logo-g.png"
 import lock from "../../assets/img/lock-gray.svg"
 import user from "../../assets/img/user-gray.svg"
-import { useState } from "react"
+import { useContext, useState } from "react"
 import {useNavigate} from 'react-router-dom'
 import { BACKEND_URL } from "../../config/env.js"
+import { UserContext } from "../../context/UserContext.js"
 
 export function LoginPage() {
     const [usernameOrEmail, setUsernameOrEmail] = useState('testing');
     const [password, setPassword] = useState('testing');
     const [message, setMessage] = useState({status: '', text: ''});
+    const {login} = useContext(UserContext);
     const navigate = useNavigate();
 
     function handleSubmit(e) {
@@ -30,15 +32,17 @@ export function LoginPage() {
         .then(data => {
             if (data.status === 'success') {
                 setMessage({status: 'success', text: data.message});
+                
+                login(data.userData);
 
-                setTimeout(() => {
+                setTimeout(() => { 
                     navigate('/')
                 }, 1500)
             } else {
                 setMessage({status: 'error', text: data.message});
             }
         })
-        .catch((error) => {console.log(error)});
+        .catch((error) => {console.error(error)});
     }
 
 

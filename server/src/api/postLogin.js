@@ -43,9 +43,10 @@ export async function postLogin(req, res) {
             secure: COOKIE_SECURE,
             maxAge: COOKIE_MAX_AGE,
             sameSite: 'Lax',
+            path: '/',
         });
 
-        return res.status(200).json({ status: 'success', message: 'Prisijungta sėkmingai' });
+        return res.status(200).json({ status: 'success', message: 'Prisijungta sėkmingai', userData: payload });
     }
     catch (error) {
         console.error(error);

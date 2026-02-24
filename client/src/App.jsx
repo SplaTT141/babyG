@@ -7,6 +7,8 @@ import { ContactPage } from "./pages/public/ContactPage";
 import { CollectionPage } from "./pages/public/CollectionPage";
 import { LoginPage } from "./pages/public/LoginPage";
 import { UserContextWrapper } from "./context/UserContextWrapper";
+import { LogoutPage } from "./pages/admin/LogoutPage";
+import { DashboardPage } from "./pages/admin/DashboardPage";
 
 export function App() {
 
@@ -15,11 +17,18 @@ export function App() {
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/apie-mus" element={<AboutPage />} />
-          <Route path="/kolekcija" element={<CollectionPage />} />
-          <Route path="/kontaktai" element={<ContactPage />} />
-          <Route path="/login" element={<LoginPage />} />
+          <Route>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/apie-mus" element={<AboutPage />} />
+            <Route path="/kolekcija" element={<CollectionPage />} />
+            <Route path="/kontaktai" element={<ContactPage />} />
+            <Route path="/login" element={<LoginPage />} />
+          </Route>
+
+          <Route>
+            <Route path="/dashboard" element={<DashboardPage />} />
+            <Route path="/logout" element={<LogoutPage />} />
+          </Route>
         </Routes>
         <Footer  />
       </BrowserRouter>

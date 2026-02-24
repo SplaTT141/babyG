@@ -3,18 +3,21 @@ import bag from "../assets/img/bag.svg";
 import heart from "../assets/img/heart.svg";
 import hamburger from "../assets/img/hamburger.svg";
 import xmark from "../assets/img/xmark.svg";
+import dashboard from "../assets/img/admin.svg";
+import logout from "../assets/img/log-out.svg";
 import { Link, NavLink } from "react-router-dom";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { UserContext } from "../context/UserContext";
 
 export function Header() {
     const [isOpen, setIsOpen] = useState(false);
+    const {isLoggedIn} = useContext(UserContext);
 
     const navLinks = [
         {text: 'Pagrindinis', link: '/'},
         {text: 'Apie mus', link: '/apie-mus'},
         {text: 'Kolekcija', link: '/kolekcija'},
         {text: 'Kontaktai', link: '/kontaktai'},
-        {text: 'login(laikina)', link: '/login'},
     ]
 
     return(
@@ -37,12 +40,23 @@ export function Header() {
                     </ul>
                 </div>
                 
-                <div>
-                    <ul className="flex gap-2">
-                        <li ><Link to="#"><img className="w-7 hover-scale-xl" src={bag} alt="bag" /></Link></li>
-                        <li><Link to="#"><img className="w-7 hover-scale-xl" src={heart} alt="heart" /></Link></li>
-                    </ul>
-                </div>
+                {
+                    isLoggedIn
+                    ?
+                    <div>
+                        <ul className="flex gap-2">
+                            <li ><Link to={'/dashboard'}><img className="w-7 hover-scale-xl" src={dashboard} alt="dashboard" /></Link></li>
+                            <li><Link to={'/logout'}><img className="w-7 hover-scale-xl" src={logout} alt="logout" /></Link></li>
+                        </ul>
+                    </div>
+                    :
+                    <div>
+                        <ul className="flex gap-2">
+                            <li ><Link to="#"><img className="w-7 hover-scale-xl" src={bag} alt="bag" /></Link></li>
+                            <li><Link to="#"><img className="w-7 hover-scale-xl" src={heart} alt="heart" /></Link></li>
+                        </ul>
+                    </div>
+                }
             </div>
             
                 {/*---------- Mobile menu ----------*/}
