@@ -9,16 +9,22 @@ export function AdminLayout() {
     const {role} = useContext(UserContext);
 
     return (
-        <>
-            <Header />
-            {
-                role === 'admin'
-                ?
-                <Outlet />
-                : 
-                <LoginRequired />
-            }
+        <div className="flex flex-col min-h-screen">
+            <div className="bg-white border-b">
+                <div className="container">
+                    <Header />
+                </div>
+            </div>
+                <main>
+                    {
+                        role === 'admin'
+                        ?
+                        <Outlet />
+                        : 
+                        <LoginRequired />
+                    }
+                </main>
             <Footer />
-        </>
+        </div>
     )
 }

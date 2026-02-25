@@ -3,12 +3,13 @@
 body {
   background: linear-gradient(to right, #ddc3e7, #ecc8c9);
   font-family: Calibri, sans-serif, "Segoe UI", "Gill Sans";
-  /* min-height: 100vh; */
 }
 
-/* main {
-  min-height: calc(100vh - 160px - 101px);
-} */
+main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
 
 .container {
   @apply w-9/10 sm:w-8/10 mx-auto;

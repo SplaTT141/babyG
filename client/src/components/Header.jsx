@@ -21,7 +21,7 @@ export function Header() {
     ]
 
     return(
-        <header className="bg-white shadow-[0px_2px_4px_0px_rgba(0,0,0,0.24)] sm:container sm:mx-auto sm:w-9/10 sm:mt-4 sm:rounded-lg">
+        <>
             <div className="flex justify-between items-center px-3">
                 {/*---------- Toggle mobile menu visibility ----------*/}
                 <button onClick={() => {setIsOpen(!isOpen)}} className="sm:hidden w-8 cursor-pointer">
@@ -67,6 +67,6 @@ export function Header() {
                         }
                     </ul>
                 </div>
-        </header>
+        </>
     )
 }
