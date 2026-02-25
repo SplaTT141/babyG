@@ -3,11 +3,12 @@
 body {
   background: linear-gradient(to right, #ddc3e7, #ecc8c9);
   font-family: Calibri, sans-serif, "Segoe UI", "Gill Sans";
+  /* min-height: 100vh; */
 }
 
-main {
+/* main {
   min-height: calc(100vh - 160px - 101px);
-}
+} */
 
 .container {
   @apply w-9/10 sm:w-8/10 mx-auto;
@@ -33,11 +34,11 @@ main {
     @apply transition-all duration-200 hover:scale-125;
   }
 
-  .active {
+  .links .active {
     position: relative;
   }
 
-  .active::after {
+  .links .active::after {
     content: "";
     position: absolute;
     bottom: -1px;

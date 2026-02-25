@@ -159,7 +159,7 @@ export function HomePage() {
                 </div>
             </section>
             {/*---------- Popular products section ----------*/}
-            <section  className="section-white pt-5">
+            <section className="section-white pt-5">
                     <div className="container mx-auto">
                         <h1 className="heading">Populiariausios prekės</h1>
                         <p className="paragraph mb-6">Atraskite mūsų populiariausias prekes, kurios derina komfortą ir stilių</p>
@@ -171,7 +171,7 @@ export function HomePage() {
                                         className="
                                         card cursor-pointer
                                         hover-scale-sm hover:shadow
-                                        w-80 sm:mx-2 px-5 h-98"
+                                        w-70 sm:mx-2 px-5 h-98"
                                     >
                                         <h2 className="text-md font-bold my-4">{dress.name}</h2>
                                         <div className="w-55">

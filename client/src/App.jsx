@@ -27,7 +27,7 @@ export function App() {
           </Route>
 
           <Route element={<AdminLayout />}>
-            <Route path="/admin/dashboard" element={<AdminDashboardPage />} />
+            <Route path="/admin" element={<AdminDashboardPage />} />
           </Route>
 
           <Route element={<PublicLayout />}>

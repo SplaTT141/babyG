@@ -21,7 +21,7 @@ export function Header() {
     ]
 
     return(
-        <header className="container mx-auto w-9/10 bg-white mt-4 rounded-lg shadow-[0px_2px_4px_0px_rgba(0,0,0,0.24)]">
+        <header className="bg-white shadow-[0px_2px_4px_0px_rgba(0,0,0,0.24)] sm:container sm:mx-auto sm:w-9/10 sm:mt-4 sm:rounded-lg">
             <div className="flex justify-between items-center px-3">
                 {/*---------- Toggle mobile menu visibility ----------*/}
                 <button onClick={() => {setIsOpen(!isOpen)}} className="sm:hidden w-8 cursor-pointer">
@@ -32,10 +32,10 @@ export function Header() {
                     <img className="w-22" src={logo} alt="logo" />
                 </Link>
 
-                <div className="hidden sm:inline font-bold text-md">
+                <div className="hidden sm:inline font-bold text-md links">
                     <ul className="flex gap-5">
                         {
-                            navLinks.map((link, index) => (<li className=" hover-scale-sm" key={index}><NavLink to={link.link}>{link.text}</NavLink></li>))
+                            navLinks.map((link, index) => (<li className="hover-scale-sm" key={index}><NavLink to={link.link}>{link.text}</NavLink></li>))
                         }
                     </ul>
                 </div>
@@ -45,7 +45,7 @@ export function Header() {
                     ?
                     <div>
                         <ul className="flex gap-2">
-                            <li ><Link to={'/admin/dashboard'}><img className="w-7 hover-scale-xl" src={dashboard} alt="dashboard" /></Link></li>
+                            <li ><Link to={'/admin'}><img className="w-7 hover-scale-xl" src={dashboard} alt="dashboard" /></Link></li>
                             <li><Link to={'/logout'}><img className="w-7 hover-scale-xl" src={logout} alt="logout" /></Link></li>
                         </ul>
                     </div>

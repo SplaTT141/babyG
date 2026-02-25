@@ -1,7 +1,9 @@
+import { Sidebar } from "../../components/Sidebar";
+
 export function AdminDashboardPage() {
     return (
         <main>
-            <h1>dashboard</h1>
+            <Sidebar />
         </main>
     )
 }
