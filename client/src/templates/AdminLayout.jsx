@@ -16,16 +16,18 @@ export function AdminLayout() {
                     <Header />
                 </div>
             </div>
-                <main>
-                    <Sidebar />
-                    {
-                        role === 'admin'
-                        ?
+            <main className="flex flex-1">
+                {
+                    role === 'admin'
+                    ?
+                    <>
+                        <Sidebar />
                         <Outlet />
-                        : 
-                        <LoginRequired />
-                    }
-                </main>
+                    </>
+                    : 
+                    <LoginRequired />
+                }
+            </main>
             <Footer />
         </div>
     )

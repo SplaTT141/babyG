@@ -41,8 +41,8 @@ export function Sidebar() {
     return (
         <section className={
                     `bg-white ${!isOpen ? "w-15" : 'w-35'} 
-                    flex-1 flex flex-col items-center pt-4
-                    transition-all duration-300 ease-in-out`}
+                    flex flex-col items-center pt-4
+                    transition-all duration-100 ease-in-out`}
         >
 
             <button 

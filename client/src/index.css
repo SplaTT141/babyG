@@ -5,12 +5,6 @@ body {
   font-family: Calibri, sans-serif, "Segoe UI", "Gill Sans";
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-}
-
 .container {
   @apply w-9/10 sm:w-8/10 mx-auto;
 }
@@ -49,7 +43,7 @@ main {
     background: black;
   }
 
-  .dashboard-links .active {
+  .dashboard-links.active {
     background-color: var(--color-orange);
     border-radius: 10px;
   }
