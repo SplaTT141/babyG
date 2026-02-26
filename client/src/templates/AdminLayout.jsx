@@ -4,6 +4,7 @@ import { Footer } from "../components/Footer"
 import { useContext } from "react"
 import { UserContext } from "../context/UserContext"
 import { LoginRequired } from "../components/LoginRequired";
+import { Sidebar } from "../components/Sidebar";
 
 export function AdminLayout() {
     const {role} = useContext(UserContext);
@@ -16,6 +17,7 @@ export function AdminLayout() {
                 </div>
             </div>
                 <main>
+                    <Sidebar />
                     {
                         role === 'admin'
                         ?

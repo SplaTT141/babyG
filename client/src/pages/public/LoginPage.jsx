@@ -35,9 +35,7 @@ export function LoginPage() {
                 
                 login(data.userData);
 
-                setTimeout(() => { 
-                    navigate('/')
-                }, 1500)
+                navigate('/')
             } else {
                 setMessage({status: 'error', text: data.message});
             }

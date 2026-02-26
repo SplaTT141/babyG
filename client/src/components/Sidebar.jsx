@@ -11,35 +11,58 @@ export function Sidebar() {
     const navLinks = [
         {
             img: overview,
-            text: 'Apžvalga',  
+            text: 'Apžvalga',
+            link: '/admin/apzvalga'
         },
         {
             img: orders,
             text: 'Užsakymai',  
+            link: '/admin/uzsakymai'
         },
         {
             img: storage,
             text: 'Sandelis',  
+            link: '/admin/sandelis',  
         },
         {
             img: stats,
             text: 'Statistika',  
+            link: '/admin/statistika',  
         },
         {
             img: clients,
-            text: 'Klientai',  
+            text: 'Klientai', 
+            link: '/admin/klientai',  
         },
     ]
 
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <section className="bg-white w-10 flex-1">
-            <div className="flex flex-col gap-5 py-5 items-center">
-            <button onClick={() => {setIsOpen(!isOpen)}} className="w-7"><img src={expand} alt="expand" /></button>
+        <section className={
+                    `bg-white ${!isOpen ? "w-15" : 'w-35'} 
+                    flex-1 flex flex-col items-center pt-4
+                    transition-all duration-300 ease-in-out`}
+        >
+
+            <button 
+                onClick={() => {setIsOpen(!isOpen)}}
+                className={`${isOpen ? 'rotate-180' : ''} w-7 duration-300 ease-out cursor-pointer hover-scale-md`}
+            >
+                <img src={expand} alt="expand" />
+            </button>
+
+            <div className="flex flex-col gap-3 pt-4">
                 {
                     navLinks.map(link => (
-                        <NavLink><img className="w-8" src={link.img} alt={`${link.img}`} />{isOpen ? link.text : ''}</NavLink>
+                        <NavLink 
+                            className="flex items-center gap-3 hover-scale-md p-1 dashboard-links"
+                            key={link.link}
+                            to={link.link}    
+                        >
+                            <img className="w-8" src={link.img} alt={`${link.text}`} />
+                            <span className={`${!isOpen ? 'hidden' : ''} font-bold`}>{link.text}</span>
+                        </NavLink>
                     ))
                 }
             </div>

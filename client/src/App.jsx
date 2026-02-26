@@ -10,6 +10,11 @@ import { AdminDashboardPage } from "./pages/admin/AdminDashboardPage";
 import { PublicLayout } from "./templates/PublicLayout";
 import { AdminLayout } from "./templates/AdminLayout";
 import { NotFoundPage } from "./pages/public/NotFoundPage";
+import { AdminOverviewPage } from "./pages/admin/AdminOverviewPage";
+import { AdminOrdersPage } from "./pages/admin/AdminOrdersPage copy";
+import { AdminStatsPage } from "./pages/admin/AdminStatsPage";
+import { AdminCustomersPage } from "./pages/admin/AdminCustomersPage";
+import { AdminStoragePage } from "./pages/admin/AdminStoragePage";
 
 export function App() {
 
@@ -28,6 +33,11 @@ export function App() {
 
           <Route element={<AdminLayout />}>
             <Route path="/admin" element={<AdminDashboardPage />} />
+            <Route path="/admin/apzvalga" element={<AdminOverviewPage />} />
+            <Route path="/admin/sandelis" element={<AdminStoragePage />} />
+            <Route path="/admin/uzsakymai" element={<AdminOrdersPage />} />
+            <Route path="/admin/statistika" element={<AdminStatsPage />} />
+            <Route path="/admin/klientai" element={<AdminCustomersPage />} />
           </Route>
 
           <Route element={<PublicLayout />}>

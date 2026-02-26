@@ -32,7 +32,7 @@ export function Header() {
                     <img className="w-22" src={logo} alt="logo" />
                 </Link>
 
-                <div className="hidden sm:inline font-bold text-md links">
+                <div className="hidden sm:inline font-bold text-md navbar-links">
                     <ul className="flex gap-5">
                         {
                             navLinks.map((link, index) => (<li className="hover-scale-sm" key={index}><NavLink to={link.link}>{link.text}</NavLink></li>))

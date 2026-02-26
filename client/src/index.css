@@ -35,11 +35,11 @@ main {
     @apply transition-all duration-200 hover:scale-125;
   }
 
-  .links .active {
+  .navbar-links .active {
     position: relative;
   }
 
-  .links .active::after {
+  .navbar-links .active::after {
     content: "";
     position: absolute;
     bottom: -1px;
@@ -47,6 +47,11 @@ main {
     width: 100%;
     height: 1px;
     background: black;
+  }
+
+  .dashboard-links .active {
+    background-color: var(--color-orange);
+    border-radius: 10px;
   }
 }
 
