@@ -3,7 +3,6 @@ import { UserContext } from "../../context/UserContext"
 
 export function AdminDashboardPage() {
     const {username} = useContext(UserContext);
-    console.log(username)
 
     return (
         <main>
