@@ -13,7 +13,9 @@ export function DashboardHeading({title}) {
         <section className="bg-white">
             <div className="flex justify-between items-center px-5 h-10 md:px-10 md:h-15">
                 <h1 className="font-bold">{displayTitle}</h1>
-                <span className="text-black text-xl rounded-full bg-orange px-2 md:text-3xl">{username[0].toUpperCase()}</span>
+                <div className="text-black text-xl rounded-full bg-orange px-2 md:text-3xl">
+                    <span>{username[0].toUpperCase()}</span>
+                </div>
             </div>
         </section>
     )
