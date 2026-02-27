@@ -4,26 +4,20 @@ import { BACKEND_URL } from "../config/env";
 import { UserContext } from "./UserContext";
 
 export function UserContextWrapper(props) {
-    const [isLoggedIn, setIsLoggedIn] = useState(initialUserContext.isLoggedIn);
-    const [role, setRole] = useState(initialUserContext.role);
-    const [username, setUsername] = useState(initialUserContext.username);
-    const [email, setEmail] = useState(initialUserContext.email);
-    const [id, setId] = useState(initialUserContext.id);
+    const [user, setUser] = useState(initialUserContext);
 
-    function login(id, username, email) {
-        setIsLoggedIn(true);
-        setRole('admin');
-        setId(id);
-        setUsername(username);
-        setEmail(email);
+    function login({id, username, email}) {
+        setUser({
+            isLoggedIn: true,
+            role: 'admin',
+            id: id,
+            username,
+            email,
+        });
     }
 
     function logout() {
-        setIsLoggedIn(initialUserContext.isLoggedIn);
-        setRole(initialUserContext.role);
-        setId(initialUserContext.id);
-        setUsername(initialUserContext.username);
-        setEmail(initialUserContext.email);
+        setUser(initialUserContext);
     }
 
     useEffect(() => {
@@ -34,19 +28,18 @@ export function UserContextWrapper(props) {
             .then(res => res.json())
             .then((data) => {
                 if (data.status === 'success') {
-                    login(data.id, data.username, data.email)
+                    login({
+                        id: data.userData.id,
+                        username: data.userData.username,
+                        email: data.userData.email,
+                    });
                 };
             })
-            .catch(console.error);
+            .catch(console.error)
     }, []);
 
-
     const values = {
-        isLoggedIn,
-        role,
-        id,
-        email,
-        username,
+        ...user,
         login,
         logout,
     }

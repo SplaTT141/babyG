@@ -5,6 +5,7 @@ import { useContext } from "react"
 import { UserContext } from "../context/UserContext"
 import { LoginRequired } from "../components/LoginRequired";
 import { Sidebar } from "../components/Sidebar";
+import { DashboardHeading } from "../components/DashboardHeading";
 
 export function AdminLayout() {
     const {role} = useContext(UserContext);
@@ -16,18 +17,21 @@ export function AdminLayout() {
                     <Header />
                 </div>
             </div>
-            <main className="flex flex-1">
-                {
-                    role === 'admin'
-                    ?
-                    <>
-                        <Sidebar />
+            {
+                role === 'admin'
+                ?
+                <main className="flex flex-1">
+                    <Sidebar />
+                    <div className="flex flex-col w-full">
+                        <DashboardHeading />
                         <Outlet />
-                    </>
-                    : 
+                    </div>
+                </main>
+                : 
+                <main className="flex flex-col flex-1">
                     <LoginRequired />
-                }
-            </main>
+                </main>
+            }
             <Footer />
         </div>
     )

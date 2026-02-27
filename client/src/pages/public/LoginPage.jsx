@@ -33,11 +33,7 @@ export function LoginPage() {
             if (data.status === 'success') {
                 setMessage({status: 'success', text: data.message});
                 
-                login(
-                    data.userData.id,
-                    data.userData.username,
-                    data.userData.email
-                );
+                login(data.userData);
 
                 navigate('/')
             } else {

@@ -5,7 +5,7 @@ export function getLogin(req, res) {
             .json({
                 status: 'success',
                 message: 'Tu buvai sėkmingai prijungtas prie sistemos',
-                user: {
+                userData: {
                     id: req.user.id,
                     username: req.user.username,
                     email: req.user.email,

@@ -22,7 +22,7 @@ export function LogoutPage() {
                 logout();
                 setMessage({status: 'success', text: data.message});
                 
-                setTimeout(() => {navigate('/')}, 1500)
+                navigate('/');
             } else {
                 setMessage({status: 'error', text: data.message});
             }

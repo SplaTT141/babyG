@@ -3,8 +3,8 @@ import kids from "../../assets/img/kids3.png"
 import baby from "../../assets/img/baby.png"
 import kid from "../../assets/img/kid.png"
 import toddler from "../../assets/img/toddler.png"
-import product from "../../assets/img/product.png"
-import product2 from "../../assets/img/product2.png"
+import product from "../../../public/img/product.png"
+import product2 from "../../../public/img/product2.png"
 import { Link } from "react-router-dom";
 
 export function HomePage() {

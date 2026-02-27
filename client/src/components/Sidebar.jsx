@@ -3,6 +3,7 @@ import stats from "../assets/img/stats.svg";
 import orders from "../assets/img/orders.svg";
 import clients from "../assets/img/clients.svg";
 import storage from "../assets/img/storage.svg";
+import products from "../assets/img/products.svg";
 import overview from "../assets/img/overview.svg";
 import expand from "../assets/img/expand.svg";
 import { useState } from "react";
@@ -20,8 +21,13 @@ export function Sidebar() {
             link: '/admin/uzsakymai'
         },
         {
+            img: products,
+            text: 'Prekės',  
+            link: '/admin/prekes',  
+        },
+        {
             img: storage,
-            text: 'Sandelis',  
+            text: 'Sandėlis',  
             link: '/admin/sandelis',  
         },
         {
@@ -40,14 +46,14 @@ export function Sidebar() {
 
     return (
         <section className={
-                    `bg-white ${!isOpen ? "w-15" : 'w-35'} 
+                    `bg-white ${!isOpen ? "w-8 sm:w-12" : 'w-33'} 
                     flex flex-col items-center pt-4
                     transition-all duration-100 ease-in-out`}
         >
 
             <button 
                 onClick={() => {setIsOpen(!isOpen)}}
-                className={`${isOpen ? 'rotate-180' : ''} w-7 duration-300 ease-out cursor-pointer hover-scale-md`}
+                className={`${isOpen ? 'rotate-180' : ''} w-6 sm:w-7 duration-300 ease-out cursor-pointer hover-scale-md`}
             >
                 <img src={expand} alt="expand" />
             </button>

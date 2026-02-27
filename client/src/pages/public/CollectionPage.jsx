@@ -1,5 +1,5 @@
-import product from "../../assets/img/product.png"
-import product2 from "../../assets/img/product2.png"
+import product from "../../../public/img/product.png"
+import product2 from "../../../public/img/product2.png"
 
 export function CollectionPage() {
     const filterBtns = [
