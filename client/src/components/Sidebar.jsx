@@ -8,36 +8,36 @@ import overview from "../assets/img/overview.svg";
 import expand from "../assets/img/expand.svg";
 import { useState } from "react";
 
-export function Sidebar() {
+export function Sidebar({setTitle}) {
     const navLinks = [
         {
             img: overview,
-            text: 'Apžvalga',
+            title: 'Apžvalga',
             link: '/admin/apzvalga'
         },
         {
             img: orders,
-            text: 'Užsakymai',  
+            title: 'Užsakymai',  
             link: '/admin/uzsakymai'
         },
         {
             img: products,
-            text: 'Prekės',  
+            title: 'Prekės',  
             link: '/admin/prekes',  
         },
         {
             img: storage,
-            text: 'Sandėlis',  
+            title: 'Sandėlis',  
             link: '/admin/sandelis',  
         },
         {
             img: stats,
-            text: 'Statistika',  
+            title: 'Statistika',  
             link: '/admin/statistika',  
         },
         {
             img: clients,
-            text: 'Klientai', 
+            title: 'Klientai', 
             link: '/admin/klientai',  
         },
     ]
@@ -46,9 +46,10 @@ export function Sidebar() {
 
     return (
         <section className={
-                    `bg-white ${!isOpen ? "w-8 sm:w-12" : 'w-33'} 
+                    `bg-white ${isOpen ? 'w-45' : 'sm:w-15'}
                     flex flex-col items-center pt-4
-                    transition-all duration-100 ease-in-out`}
+                    transition-all duration-100 ease-in-out
+                    border-r border-gray-300`}
         >
 
             <button 
@@ -64,10 +65,11 @@ export function Sidebar() {
                         <NavLink 
                             className="flex items-center gap-3 hover-scale-md p-1 dashboard-links"
                             key={link.link}
-                            to={link.link}    
+                            to={link.link} 
+                            onClick={() => {setTitle(link.title)}} 
                         >
-                            <img className="w-8" src={link.img} alt={`${link.text}`} />
-                            <span className={`${!isOpen ? 'hidden' : ''} font-bold`}>{link.text}</span>
+                            <img className="w-7 sm:w-10" src={link.img} alt={`${link.title}`} />
+                            <span className={`${!isOpen ? 'hidden' : ''} font-bold text-sm sm:text-base`}>{link.title}</span>
                         </NavLink>
                     ))
                 }
