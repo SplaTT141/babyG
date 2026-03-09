@@ -45,7 +45,7 @@ export function Sidebar({setTitle}) {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <section className={
+        <aside className={
                     `bg-white ${isOpen ? 'w-45' : 'sm:w-15'}
                     flex flex-col items-center pt-4
                     transition-all duration-100 ease-in-out
@@ -74,6 +74,6 @@ export function Sidebar({setTitle}) {
                     ))
                 }
             </div>
-        </section>
+        </aside>
     )
 }
