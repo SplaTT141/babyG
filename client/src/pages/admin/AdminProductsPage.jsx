@@ -11,25 +11,33 @@ export function AdminProductsPage() {
                 <button className="btn-orange m-0 w-35">+ Pridėti produktą</button>
             </div>
             <div className="overflow-x-auto mt-5">
-                <table className="w-full table-auto">
-                    <thead>
-                        <tr>
+                <table className="w-full">
+                    <thead className="border-b border-orange">
+                        <tr className="text-left">
                             <th>Nuotrauka</th>
-                            <th>Pavadinimas</th>
-                            <th>Kategorija</th>
-                            <th>Amžius</th>
-                            <th>Kaina</th>
-                            <th>Aktyvumas</th>
+                            <th className="px-3">Pavadinimas</th>
+                            <th className="px-3">Kategorija</th>
+                            <th className="px-3">Amžius</th>
+                            <th className="px-3">Kaina</th>
+                            <th className="px-3">Aktyvumas</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td><img className="w-20" src={product} alt="product" /></td>
-                            <td>text</td>
-                            <td>apranga</td>
-                            <td>6 - 12 menesiu</td>
-                            <td>39 eu</td>
-                            <td>X</td>
+                            <td><img className="w-20 rounded mt-2" src={product} alt="product" /></td>
+                            <td className="px-3">text</td>
+                            <td className="px-3">apranga</td>
+                            <td className="px-3">6 - 12 menesiu</td>
+                            <td className="px-3">39 eu</td>
+                            <td className="px-3">X</td>
+                        </tr>
+                        <tr>
+                            <td><img className="w-20 rounded mt-2" src={product} alt="product" /></td>
+                            <td className="px-3">text</td>
+                            <td className="px-3">apranga</td>
+                            <td className="px-3">6 - 12 menesiu</td>
+                            <td className="px-3">39 eu</td>
+                            <td className="px-3">X</td>
                         </tr>
                     </tbody>
                 </table>

@@ -23,7 +23,7 @@ export function AdminLayout() {
                 ?
                 <main className="flex flex-1">
                     <Sidebar setTitle={setCurrentTitle}/>
-                    <div className="flex flex-col w-full">
+                    <div className="flex flex-col w-full min-w-0">
                         <DashboardHeading title={currentTitle}/>
                         <Outlet />
                     </div>

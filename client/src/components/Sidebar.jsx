@@ -46,10 +46,10 @@ export function Sidebar({setTitle}) {
 
     return (
         <aside className={
-                    `bg-white ${isOpen ? 'w-45' : 'sm:w-15'}
+                    `bg-white ${isOpen ? 'w-30 sm:w-45' : 'sm:w-15'}
                     flex flex-col items-center pt-4
                     transition-all duration-100 ease-in-out
-                    border-r border-gray-300`}
+                    border-r border-gray-300 shrink-0`}
         >
 
             <button 
