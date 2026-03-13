@@ -10,8 +10,8 @@ export function AdminProductsPage() {
                 </div>
                 <button className="btn-orange m-0 w-35">+ Pridėti produktą</button>
             </div>
-            <div className="overflow-x-auto">
-                <table className="w-full table-fixed">
+            <div className="overflow-x-auto mt-5">
+                <table className="w-full table-auto">
                     <thead>
                         <tr>
                             <th>Nuotrauka</th>
