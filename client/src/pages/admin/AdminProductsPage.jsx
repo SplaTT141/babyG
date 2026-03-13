@@ -1,4 +1,5 @@
 import product from "../../../public/img/product.png";
+import { Link } from "react-router-dom";
 
 export function AdminProductsPage() {
     return (
@@ -8,7 +9,7 @@ export function AdminProductsPage() {
                     <h2 className="heading-h2">Prekės</h2>
                     <p className="paragraph mt-0">X produktų kataloge</p>
                 </div>
-                <button className="btn-orange m-0 w-35">+ Pridėti produktą</button>
+                <Link to={'/admin/prekes/prideti'}><button className="btn-orange m-0 w-35">+ Pridėti produktą</button></Link>
             </div>
             <div className="overflow-x-auto mt-5">
                 <table className="w-full">

@@ -16,6 +16,7 @@ import { AdminStatsPage } from "./pages/admin/AdminStatsPage";
 import { AdminCustomersPage } from "./pages/admin/AdminCustomersPage";
 import { AdminStoragePage } from "./pages/admin/AdminStoragePage";
 import { AdminProductsPage } from "./pages/admin/AdminProductsPage";
+import { AdminAddProductPage } from "./pages/admin/AdminAddProductPage";
 
 export function App() {
 
@@ -37,6 +38,7 @@ export function App() {
             <Route path="/admin/apzvalga" element={<AdminOverviewPage />} />
             <Route path="/admin/sandelis" element={<AdminStoragePage />} />
             <Route path="/admin/prekes" element={<AdminProductsPage />} />
+            <Route path="/admin/prekes/prideti" element={<AdminAddProductPage />} />
             <Route path="/admin/uzsakymai" element={<AdminOrdersPage />} />
             <Route path="/admin/statistika" element={<AdminStatsPage />} />
             <Route path="/admin/klientai" element={<AdminCustomersPage />} />
