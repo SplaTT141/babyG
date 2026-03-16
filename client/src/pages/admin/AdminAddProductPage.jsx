@@ -1,4 +1,5 @@
 import arrow from "../../assets/img/arrow-left.svg"
+import arrowDown from "../../assets/img/arrow-down.svg"
 import { useNavigate } from "react-router-dom"
 
 export function AdminAddProductPage() {
@@ -25,25 +26,12 @@ export function AdminAddProductPage() {
                             </div>
                             <div className="flex flex-col">
                                 <label>Kategorija</label>
-                                <select className="input text-gray">
-                                    <option value="">Pasirinkite...</option>
-                                    <option value="">Megztinis</option>
-                                    <option value="">Suknele</option>
-                                    <option value="">Kostiumas</option>
-                                    <option value="">Kelnes</option>
-                                </select>
+                                <button className="input text-start text-gray flex justify-between">
+                                    Pasirinkite...
+                                    <img className="w-5" src={arrowDown} alt="arrow-down" />
+                                </button>
                             </div>
-                            <div className="flex flex-col">
-                                <label>Kategorija</label>
-                                <button className="input text-start text-gray">Pasirinkite...</button>
-                            </div>
-                            
                         </div>
-                        {/* <label htmlFor="theme">Tema</label>
-                        <input className="input" type="text" id="theme" placeholder="Žinutės tema"/>
-                        <label htmlFor="message">Žinutė</label>
-                        <textarea className="input min-h-20" name="message" id="message" placeholder="Jūsų žinutė..."></textarea>
-                        <button type="submit" className="btn-orange">Pridėti</button> */}
                     </form>
                 </div>
             </div>
