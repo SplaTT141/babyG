@@ -58,7 +58,7 @@ export function AdminAddProductPage() {
             <div className="m-2">
                 <div className="border bg-white border-gray-200 rounded-xl p-3 sm:py-10 hover:shadow">
                     <form onSubmit={handleClickSubmit}>
-                        <div className="flex flex-col sm:flex-row gap-4">
+                        <div className="flex flex-col gap-4">
 
                             {/*---------- Product name ----------*/}
                             <div className="flex flex-col">
@@ -143,10 +143,26 @@ export function AdminAddProductPage() {
                                 <label>Kiekis sandelyje vnt.</label>
                                 <input onChange={(e) => (setQuantity(e.target.value))} className="input" type="number" id="quantity" />
                             </div>
-
+                            
+                            {/*---------- Confirmation buttons ----------*/}
                             <div className="flex justify-center gap-3">
-                                <button className="font-bold bg-orange-500 px-3 py-2 rounded-lg hover:bg-orange-400">Patvirtinti</button>
-                                <button onClick={() => (navigate('/admin/prekes'))} className="font-bold px-3 py-2 rounded-lg border border-gray-200 hover:bg-gray-100">Atšaukti</button>
+                                <button 
+                                    className="
+                                        font-bold bg-orange-500 px-3
+                                        py-2 rounded-lg hover:bg-orange-400 
+                                        cursor-pointer"
+                                >
+                                    Patvirtinti
+                                </button>
+                                <button 
+                                    onClick={() => (navigate('/admin/prekes'))} 
+                                    className="
+                                        font-bold px-3 py-2 rounded-lg border
+                                        border-gray-200 hover:bg-gray-100
+                                        cursor-pointer"
+                                >
+                                    Atšaukti
+                                </button>
                             </div>
                         </div>
                     </form>
