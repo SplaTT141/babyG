@@ -6,9 +6,9 @@ export async function getProducts(req, res) {
 
         const [products] = await connection.execute(sql);
 
-        return res.json({ status: 'success', products });
+        return res.status(200).json({ status: 'success', products });
     }
     catch (error) {
-        console.error(error);
+        return res.status(500).json({ status: 'error', message: 'Serverio klaida' });
     }
 }

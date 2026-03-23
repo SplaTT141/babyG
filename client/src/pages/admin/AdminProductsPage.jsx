@@ -16,7 +16,6 @@ export function AdminProductsPage() {
         })
         .then(res => res.json())
         .then(data => {
-            console.log(data)
             if (data.status === 'success') {
                 setProductsData(data.products);
             }
@@ -56,8 +55,8 @@ export function AdminProductsPage() {
                                         <td className="px-3">{product.age_range}</td>
                                         <td className="px-3">{product.price}</td>
                                         <td className="px-3">{product.is_active}</td>
-                                        <td className="px-3">
-                                            <button 
+                                        <td className="px-3 relative">
+                                            <button
                                                 type="button" 
                                                 className="
                                                     hover:bg-purple-300 rounded-xl

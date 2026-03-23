@@ -1,7 +1,7 @@
 import arrow from "../../assets/img/arrow-left.svg"
 import arrowDown from "../../assets/img/arrow-down.svg"
 import { useNavigate } from "react-router-dom"
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { BACKEND_URL } from "../../config/env";
 
 export function AdminAddProductPage() {
@@ -12,13 +12,27 @@ export function AdminAddProductPage() {
     const [price, setPrice] = useState('');
     const [quantity, setQuantity] = useState('');
 
+    const [categoryOptions, setCategoryOptions] = useState([]);
     const [isCategoryOpen, setIsCategoryOpen] = useState(false);
-    const categoryOptions = ['Kelnės', 'Suknelės', 'Batai'];
     const [selectedCategory, setSelectedCategory] = useState(null);
 
     const [isAgeOpen, setIsAgeOpen] = useState(false);
     const ageOptions = ['0-12 mėn', '1-3 metų', '4-7 metų'];
     const [selectedAge, setSelectedAge] = useState(null);
+
+    useEffect(() => {
+        fetch(BACKEND_URL + '/api/categories', {
+            method: 'GET',
+            credentials: 'include'
+        })
+        .then(res => res.json())
+        .then(data => {
+            if (data.status === 'success') {
+                setCategoryOptions(data.categories)
+            }
+        })
+        .catch(err => console.log(err))
+    }, [])
 
      function handleClickSubmit(e) {
         e.preventDefault();
@@ -39,7 +53,11 @@ export function AdminAddProductPage() {
             })
         })
         .then(res => res.json())
-        .then(data => console.log(data))
+        .then(data => {
+            if (data.status === 'success') {
+                navigate('/admin/prekes');
+            }
+        })
         .catch(err => console.log(err))
      }
 
@@ -47,7 +65,7 @@ export function AdminAddProductPage() {
         <div className="mb-10">
             <div className="flex items-center p-3 gap-4">
                 <div>
-                    <button type="button" onClick={() => {navigate('/admin/prekes')}}><img className="w-5" src={arrow} alt="arrow-left" /></button>
+                    <button type="button" onClick={() => {navigate('/admin/prekes')}}><img className="w-5 py-4 cursor-pointer" src={arrow} alt="arrow-left" /></button>
                 </div>
                 <div>
                     <h2 className="heading-h2">Pridėti naują produktą</h2>
@@ -84,12 +102,12 @@ export function AdminAddProductPage() {
                                                     type="button"
                                                     onClick={() => {
                                                         setIsCategoryOpen(false);
-                                                        setSelectedCategory(option);
+                                                        setSelectedCategory(option.name);
                                                     }} 
                                                     key={index} 
                                                     className="w-full text-left px-4 py-1 hover:bg-gray-100 rounded-lg"
                                                 >
-                                                    {option}
+                                                    {option.name}
                                                 </button>))
                                         }
                                     </div>

@@ -9,6 +9,7 @@ import { isAdmin } from "./src/middleware/isAdmin.js";
 import { postLogout } from "./src/api/postLogout.js";
 import { postProduct } from "./src/api/postProduct.js";
 import { getProducts } from "./src/api/getProducts.js";
+import { getCategories } from "./src/api/getCategories.js";
 
 const app = express();
 
@@ -23,6 +24,7 @@ app.use(authenticateToken);
 app.get('/', (req, res) => { res.send("It's alive!") });
 app.get('/api/login', getLogin);
 app.get('/api/products', getProducts);
+app.get('/api/categories', getCategories);
 
 app.post('/api/login', postLogin);
 app.post('/api/logout', postLogout);
