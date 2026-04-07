@@ -1,11 +1,11 @@
 import { NavLink } from "react-router-dom";
-import stats from "../assets/img/stats.svg";
-import orders from "../assets/img/orders.svg";
-import clients from "../assets/img/clients.svg";
-import storage from "../assets/img/storage.svg";
-import products from "../assets/img/products.svg";
-import overview from "../assets/img/overview.svg";
-import expand from "../assets/img/expand.svg";
+import stats from "../assets/img/icons/stats.svg";
+import orders from "../assets/img/icons/orders.svg";
+import clients from "../assets/img/icons/clients.svg";
+import storage from "../assets/img/icons/storage.svg";
+import products from "../assets/img/icons/products.svg";
+import overview from "../assets/img/icons/overview.svg";
+import expand from "../assets/img/icons/expand.svg";
 import { useState } from "react";
 
 export function Sidebar({setTitle}) {

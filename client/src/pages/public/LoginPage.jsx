@@ -1,6 +1,6 @@
-import logo from "../../assets/img/logo-g.png"
-import lock from "../../assets/img/lock-gray.svg"
-import user from "../../assets/img/user-gray.svg"
+import logo from "../../assets/img/logos/logo-g.png"
+import lock from "../../assets/img/icons/lock-gray.svg"
+import user from "../../assets/img/icons/user-gray.svg"
 import { useContext, useState } from "react"
 import {useNavigate} from 'react-router-dom'
 import { BACKEND_URL } from "../../config/env.js"

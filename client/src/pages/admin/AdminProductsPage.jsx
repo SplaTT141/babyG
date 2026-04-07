@@ -1,5 +1,5 @@
 // import product from "../../../public/img/product.png";
-import dots from "../../assets/img/dots.svg";
+import dots from "../../assets/img/icons/dots.svg";
 import { Link } from "react-router-dom";
 import { BACKEND_URL } from "../../config/env";
 import { useEffect, useState } from "react";

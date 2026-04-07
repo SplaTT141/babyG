@@ -1,6 +1,6 @@
-import logo from "../assets/img/logo-g.png";
-import phone from "../assets/img/phone.svg";
-import mail from "../assets/img/mail.svg";
+import logo from "../assets/img/logos/logo-g.png";
+import phone from "../assets/img/icons/phone.svg";
+import mail from "../assets/img/icons/mail.svg";
 import { Link } from "react-router-dom";
 
 export function Footer() {

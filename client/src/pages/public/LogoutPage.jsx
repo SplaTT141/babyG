@@ -1,7 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import { useContext, useState } from "react";
 import { UserContext } from "../../context/UserContext";
-import logo from "../../assets/img/logo-g.png";
+import logo from "../../assets/img/logos/logo-g.png";
 import { BACKEND_URL } from "../../config/env";
 
 export function LogoutPage() {

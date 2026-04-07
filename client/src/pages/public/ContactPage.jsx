@@ -1,8 +1,8 @@
-import phone from "../../assets/img/phone-orange.svg";
-import mail from "../../assets/img/mail-orange.svg";
-import clock from "../../assets/img/clock-orange.svg";
-import instagram from "../../assets/img/instagram-orange.svg";
-import facebook from "../../assets/img/facebook-orange.svg";
+import phone from "../../assets/img/icons/phone-orange.svg";
+import mail from "../../assets/img/icons/mail-orange.svg";
+import clock from "../../assets/img/icons/clock-orange.svg";
+import instagram from "../../assets/img/icons/instagram-orange.svg";
+import facebook from "../../assets/img/icons/facebook-orange.svg";
 
 export function ContactPage() {
 

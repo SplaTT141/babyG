@@ -1,4 +1,4 @@
-import logo from "../assets/img/logo-g.png"
+import logo from "../assets/img/logos/logo-g.png"
 import { Link } from "react-router-dom"
 
 export function LoginRequired() {

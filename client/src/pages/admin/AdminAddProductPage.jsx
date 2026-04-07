@@ -1,5 +1,5 @@
-import arrow from "../../assets/img/arrow-left.svg"
-import arrowDown from "../../assets/img/arrow-down.svg"
+import arrow from "../../assets/img/icons/arrow-left.svg"
+import arrowDown from "../../assets/img/icons/arrow-down.svg"
 import { useNavigate } from "react-router-dom"
 import { useState, useEffect } from "react";
 import { BACKEND_URL } from "../../config/env";

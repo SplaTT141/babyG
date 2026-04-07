@@ -1,10 +1,10 @@
-import logo from "../assets/img/logo.png";
-import bag from "../assets/img/bag.svg";
-import heart from "../assets/img/heart.svg";
-import hamburger from "../assets/img/hamburger.svg";
-import xmark from "../assets/img/xmark.svg";
-import dashboard from "../assets/img/admin.svg";
-import logout from "../assets/img/log-out.svg";
+import logo from "../assets/img/logos/logo.png";
+import bag from "../assets/img/icons/bag.svg";
+import heart from "../assets/img/icons/heart.svg";
+import hamburger from "../assets/img/icons/hamburger.svg";
+import xmark from "../assets/img/icons/xmark.svg";
+import dashboard from "../assets/img/icons/admin.svg";
+import logout from "../assets/img/icons/log-out.svg";
 import { Link, NavLink } from "react-router-dom";
 import { useContext, useState } from "react";
 import { UserContext } from "../context/UserContext";

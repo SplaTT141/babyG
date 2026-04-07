@@ -1,8 +1,8 @@
-import logo from "../../assets/img/logo-g.png"
-import heart from "../../assets/img/heart-orange.svg"
-import medal from "../../assets/img/medal.svg"
-import group from "../../assets/img/group.svg"
-import leaf from "../../assets/img/leaf.svg"
+import logo from "../../assets/img/logos/logo-g.png"
+import heart from "../../assets/img/icons/heart-orange.svg"
+import medal from "../../assets/img/icons/medal.svg"
+import group from "../../assets/img/icons/group.svg"
+import leaf from "../../assets/img/icons/leaf.svg"
 
 export function AboutPage() {
 

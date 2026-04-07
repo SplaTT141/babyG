@@ -1,10 +1,10 @@
-import star from "../../assets/img/star.svg";
-import kids from "../../assets/img/kids3.png"
-import baby from "../../assets/img/baby.png"
-import kid from "../../assets/img/kid.png"
-import toddler from "../../assets/img/toddler.png"
-import product from "../../../public/img/product.png"
-import product2 from "../../../public/img/product2.png"
+import star from "../../assets/img/icons/star.svg";
+import kids from "../../assets/img/illustrations/kids3.png"
+import baby from "../../assets/img/illustrations/baby.png"
+import kid from "../../assets/img/illustrations/kid.png"
+import toddler from "../../assets/img/illustrations/toddler.png"
+import product from "../../../public/img/products/product.png"
+import product2 from "../../../public/img/products/product2.png"
 import { Link } from "react-router-dom";
 
 export function HomePage() {
