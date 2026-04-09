@@ -1,11 +1,13 @@
-// import product from "../../../public/img/product.png";
 import dots from "../../assets/img/icons/dots.svg";
 import { Link } from "react-router-dom";
 import { BACKEND_URL } from "../../config/env";
 import { useEffect, useState } from "react";
+import edit from "../../assets/img/icons/edit-pencil.svg";
+import trash from "../../assets/img/icons/trash-red.svg";
 
 export function AdminProductsPage() {
     const [productsData, setProductsData] = useState([]);
+    const [activeRowId, setActiveRowId] = useState(null);
 
     useEffect(() => {
         fetch(BACKEND_URL + '/api/products', {
@@ -48,7 +50,7 @@ export function AdminProductsPage() {
                     <tbody>
                             {
                                 productsData.map((product) => (
-                                    <tr key={product.id} className="text-center">
+                                    <tr key={product.id} className="text-center relative">
                                         <td>{product.id}</td>
                                         <td className="px-3">{product.name}</td>
                                         <td className="px-3">{product.category}</td>
@@ -57,14 +59,39 @@ export function AdminProductsPage() {
                                         <td className="px-3">{product.is_active}</td>
                                         <td className="px-3 relative">
                                             <button
+                                                onClick={() => setActiveRowId(product.id)}
                                                 type="button" 
                                                 className="
                                                     hover:bg-purple-300 rounded-xl
-                                                    px-1 m-1 duration-200 cursor-pointer
-                                            ">
+                                                    px-1 m-1 duration-200 cursor-pointer"
+                                            >
                                                 <img className="w-8" src={dots} alt="more" />
                                             </button>
                                         </td>
+                                        {
+                                            activeRowId === product.id && (
+                                                <td 
+                                                    className="
+                                                        absolute top-10 right-10 md:right-15 
+                                                        flex flex-col 
+                                                        border border-orange rounded-xl
+                                                        p-2 bg-white z-20"
+                                                >
+                                                    <button 
+                                                        className="flex gap-1 cursor-pointer hover-scale-sm"
+                                                    >
+                                                        <img className="w-5" src={edit} alt="redaguoti" />
+                                                        Redaguoti
+                                                    </button>
+                                                    <button 
+                                                        className="flex gap-1 cursor-pointer text-red-600 hover-scale-sm"
+                                                    >
+                                                        <img className="w-5" src={trash} alt="panaikti" />
+                                                        Ištrinti
+                                                    </button>
+                                                </td>
+                                            )
+                                        }
                                     </tr>
                                 ))
                             }
