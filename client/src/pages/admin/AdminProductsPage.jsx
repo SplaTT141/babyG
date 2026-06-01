@@ -29,11 +29,21 @@ export function AdminProductsPage() {
         fetch(BACKEND_URL + '/api/products', {
             method: 'DELETE',
             credentials: 'include',
+            headers: {
+                'Content-Type': 'application/json',
+            },
             body: JSON.stringify({
                 id: productId
             })
         })
         .then(res => res.json())
+        .then(data => {
+            if (data.status === 'success') {
+                setProductsData(prev =>
+                    prev.filter(product => product.id !== productId)
+                );
+            }
+        })
     }
 
     return (
@@ -95,7 +105,7 @@ export function AdminProductsPage() {
                                                     </button>
                                                     <button 
                                                         className="flex gap-1 cursor-pointer text-red-600 hover-scale-sm"
-                                                        onClick={handleClickDelete(product.id)}
+                                                        onClick={() => {handleClickDelete(product.id)}}
                                                     >
                                                         <img className="w-5" src={trash} alt="panaikti" />
                                                         Ištrinti
