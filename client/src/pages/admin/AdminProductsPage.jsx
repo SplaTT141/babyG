@@ -25,6 +25,16 @@ export function AdminProductsPage() {
         .catch(error => console.log(error))
     }, [])
 
+    function handleClickDelete(productId) {
+        fetch(BACKEND_URL + '/api/products', {
+            method: 'DELETE',
+            credentials: 'include',
+            body: JSON.stringify({
+                id: productId
+            })
+        })
+        .then(res => res.json())
+    }
 
     return (
         <div className="border bg-white border-gray-200 rounded-xl p-3 m-5">
@@ -85,6 +95,7 @@ export function AdminProductsPage() {
                                                     </button>
                                                     <button 
                                                         className="flex gap-1 cursor-pointer text-red-600 hover-scale-sm"
+                                                        onClick={handleClickDelete(product.id)}
                                                     >
                                                         <img className="w-5" src={trash} alt="panaikti" />
                                                         Ištrinti

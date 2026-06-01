@@ -10,6 +10,7 @@ import { postLogout } from "./src/api/postLogout.js";
 import { postProduct } from "./src/api/postProduct.js";
 import { getProducts } from "./src/api/getProducts.js";
 import { getCategories } from "./src/api/getCategories.js";
+import { deleteProduct } from "./src/api/deleteProduct.js";
 
 const app = express();
 
@@ -29,6 +30,8 @@ app.get('/api/categories', getCategories);
 app.post('/api/login', postLogin);
 app.post('/api/logout', postLogout);
 app.post('/api/products', postProduct);
+
+app.delete('/api/products', deleteProduct);
 
 app.listen(PORT, () => {
     console.log(`Server is running on: http://localhost:${PORT}`);
